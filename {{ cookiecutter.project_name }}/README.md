@@ -31,6 +31,6 @@ print(some_function(3, 4))
 
 ## Спасибо
 
-Этот проект был сгенерирован с помощью [`autodonate-plugin-template`](https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}-plugin-template).
-Текущая версия примера: [{% gitcommit %}](https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}-plugin-template/tree/{% gitcommit %}).
-Смотрите что [обновилось](https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}-plugin-template/compare/{% gitcommit %}...master) с того времени.
+Этот проект был сгенерирован с помощью [`autodonate-plugin-template`](https://github.com/fire-squad/autodonate-plugin-template).
+Текущая версия примера: [{% gitcommit %}](https://github.com/fire-squad/autodonate-plugin-template/tree/{% gitcommit %}).
+Смотрите что [обновилось](https://github.com/fire-squad/autodonate-plugin-template/compare/{% gitcommit %}...master) с того времени.
