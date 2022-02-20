@@ -18,6 +18,7 @@ repository = "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter
 [tool.poetry.dependencies]
 python = "^3.10"
 poetry = "^1"
+autodonate = "^0.1.0.alpha.0"
 Django = "^4.0.2"
 
 [tool.poetry.dev-dependencies]
@@ -29,6 +30,7 @@ safety = "^1.10"
 pytest = "^7.0"
 pytest-cov = "^3.0"
 pytest-randomly = "^3.11"
+pytest-django = "^4.5.2"
 
 sphinx = "^4.4"
 sphinx-autodoc-typehints = "^1.17"
