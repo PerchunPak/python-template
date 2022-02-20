@@ -1,0 +1,14 @@
+{
+  "project_name": "my-autodonate-plugin",
+  "organization": "fire-squad",
+  "project_description": "This is how autodonate plugin should look like!",
+
+  "license": "AGPL3",
+
+  "_extensions": ["jinja2_git.GitExtension"],
+  "_copy_without_render": [
+    ".venv",
+    "docs/_build",
+    ".github/workflows"
+  ]
+}

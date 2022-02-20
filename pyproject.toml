@@ -1,0 +1,35 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "autodonate-lugin-template"
+description = "Cookiecutter template для плагина сайта autodonate."
+version = "0.1.0"
+license = "MIT"
+
+authors = ["fire-squad <team@firesquare.ru>"]
+
+readme = "README.md"
+
+repository = "https://github.com/fire-squad/autodonate-lugin-template"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+poetry = "^1"
+
+cookiecutter = "^1.7"
+jinja2-git = "^1.1"
+MarkupSafe = "^1"
+lice = "^0.6"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+mypy = "^0.931"
+
+safety = "^1.10"
+
+pytest = "^7.0"
+pytest-cov = "^3.0"
+pytest-randomly = "^3.11"
