@@ -21,7 +21,7 @@ git clone https://fire-squad/autodonate-plugin-template.git
 cd autodonate-plugin-template
 pip install poetry
 poetry install
-cookiecutter gh:fire-squad/autodonate-plugin-template
+cookiecutter .
 ```
 
 ## Проекты использующие это
