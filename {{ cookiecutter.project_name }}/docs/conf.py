@@ -16,7 +16,10 @@ import sys
 import tomlkit
 
 sys.path.insert(0, os.path.abspath(".."))
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "{{ cookiecutter.project_name.lower().replace('-', '_') }}.settings")
+os.environ.setdefault(
+    "DJANGO_SETTINGS_MODULE",
+    "{{ cookiecutter.project_name.lower().replace('-', '_') }}.settings",
+)
 
 
 # -- Project information -----------------------------------------------------

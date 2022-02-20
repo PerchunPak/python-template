@@ -3,8 +3,7 @@ SHELL:=/usr/bin/env bash
 .PHONY: lint
 lint:
 	poetry run black .
-	poetry run mypy --install-types --non-interactive {{cookiecutter.project_name.lower().replace('-', '_')}} tests
-	poetry run doc8 -q docs
+	poetry run mypy --install-types --non-interactive hooks tests
 
 .PHONY: unit
 unit:

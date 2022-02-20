@@ -13,17 +13,17 @@ from textwrap import dedent
 
 # Get the root project directory:
 PROJECT_DIRECTORY = realpath(curdir)
-PROJECT_NAME = '{{ cookiecutter.project_name }}'
+PROJECT_NAME = "{{ cookiecutter.project_name }}"
 
 # We need these values to generate correct license:
-LICENSE = '{{ cookiecutter.license }}'
-ORGANIZATION = '{{ cookiecutter.organization }}'
+LICENSE = "{{ cookiecutter.license }}"
+ORGANIZATION = "{{ cookiecutter.organization }}"
 
 
 def generate_license() -> None:
     """Generates license file for the project."""
     license_result = system(  # noqa: S605
-        'lice {0} -o {1} -p {2} > {3}/LICENSE'.format(
+        "lice {0} -o {1} -p {2} > {3}/LICENSE".format(
             LICENSE.lower(),
             ORGANIZATION,
             PROJECT_NAME,
