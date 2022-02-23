@@ -7,7 +7,7 @@ https://github.com/wemake-services/wemake-python-package
 """
 
 from os import system
-from os.path import realpath, curdir
+from os.path import curdir, realpath
 from sys import exit
 from textwrap import dedent
 
