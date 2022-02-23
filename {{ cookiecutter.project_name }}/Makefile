@@ -3,6 +3,7 @@ SHELL:=/usr/bin/env bash
 .PHONY: lint
 lint:
 	poetry run black .
+	poetry run isort .
 	poetry run mypy --install-types --non-interactive {{ cookiecutter.project_name }} tests
 	poetry run doc8 -q docs
 

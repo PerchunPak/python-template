@@ -16,13 +16,14 @@ readme = "README.md"
 repository = "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 poetry = "^1"
 autodonate = "^0.1.1"
 Django = "^4.0.2"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
+isort = "^5.10.1"
 mypy = "^0.931"
 
 safety = "^1.10"

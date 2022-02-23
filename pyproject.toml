@@ -26,6 +26,7 @@ lice = "^0.6"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
+isort = "^5.10.1"
 mypy = "^0.931"
 
 safety = "^1.10"
@@ -35,4 +36,6 @@ pytest-cov = "^3.0"
 pytest-randomly = "^3.11"
 
 [tool.black]
+line-length = 120
+target-version = ['py310']
 extend-exclude = "{{ cookiecutter.project_name }}"
