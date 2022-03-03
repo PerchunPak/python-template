@@ -19,7 +19,7 @@ repository = "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter
 python = "^3.10"
 poetry = "^1"
 autodonate = "^0.1.1"
-Django = "^4.0.2"
+Django = "^4.0.3"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
