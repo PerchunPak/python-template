@@ -21,7 +21,7 @@ package:
 
 .PHONY: docker
 docker:
-	docker build -t autodonate .
+	docker build -t autodonate-plugin-template .
 
 .PHONY: test
 test: style package unit
