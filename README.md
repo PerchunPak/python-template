@@ -27,7 +27,7 @@ cd autodonate-plugin-template
 Если вы на платформе Linux, используйте команду:
 
 ```bash
-curl -sSL https://install.python-poetry.org | python3 -
+curl -sSL https://install.python-poetry.org | python -
 ```
 
 Если вы на Windows, откройте PowerShell от имени администратора и используйте:

@@ -20,6 +20,42 @@
 pip install {{ cookiecutter.project_name }}
 ```
 
+## Установка для локальной разработки
+
+```bash
+git clone https://https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}.git
+cd {{ cookiecutter.project_name }}
+```
+
+Затем установите `poetry` [рекомендованым путем](https://python-poetry.org/docs/master/#installation).
+
+Если вы на платформе Linux, используйте команду:
+
+```bash
+curl -sSL https://install.python-poetry.org | python -
+```
+
+Если вы на Windows, откройте PowerShell от имени администратора и используйте:
+
+```powershell
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+```
+
+Внимание: На момент написания текста (03.3.2022), существует баг, который вызывает предупреждение при использовании любой команды. 
+Если вы с таким столкнулись, можете установить poetry другим путем:
+
+```bash
+pip install poetry
+```
+
+Но учитывайте что это не рекомендованый путь, вы возможно не сможете использовать некоторые функции (например `poetry self update`).
+
+И наконец установим зависимости:
+
+```bash
+poetry install
+```
+
 ## Пример
 
 ```py
