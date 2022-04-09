@@ -5,17 +5,21 @@ updates:
   schedule:
     interval: daily
     time: "00:00"
-  open-pull-requests-limit: 10
+  ignore:
+    - dependency-name: "*"
+      update-types: [ "version-update:semver-patch" ]
+
 - package-ecosystem: pip
   directory: "/docs"
   schedule:
     interval: daily
     time: "00:00"
-  open-pull-requests-limit: 10
+  ignore:
+    - dependency-name: "*"
+      update-types: [ "version-update:semver-patch" ]
 
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
     interval: daily
     time: "00:00"
-  open-pull-requests-limit: 10
