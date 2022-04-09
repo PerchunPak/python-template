@@ -18,34 +18,23 @@ jobs:
         python-version: ['3.10', '3.11-dev']
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
+    - uses: actions/checkout@v3
 
     - name: Install poetry
       run: |
-        curl -sSL \
-          "https://install.python-poetry.org/" | python
+        curl -sSL "https://install.python-poetry.org" | python
 
         # Adding `poetry` to `$PATH`:
         echo "$HOME/.poetry/bin" >> $GITHUB_PATH
 
-    - name: Cache poetry dependencies
-      uses: actions/cache@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
       with:
-        path: .venv
-        key: ${{ runner.os }}-${{ matrix.python-version }}-build-poetry-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-${{ matrix.python-version }}-build-poetry
-          ${{ runner.os }}-${{ matrix.python-version }}
-          ${{ runner.os }}-
+        python-version: ${{ matrix.python-version }}
+        cache: 'poetry'
 
     - name: Install dependencies
-      run: |
-        poetry config virtualenvs.in-project true
-        poetry install
+      run: poetry install
 
     - name: Run checks
       run: make test
