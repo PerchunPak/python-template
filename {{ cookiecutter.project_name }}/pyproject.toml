@@ -20,13 +20,24 @@ python = "^3.10"
 poetry = "^1"
 autodonate = "^0.1.1"
 
+# Our dependecies
 Django = "^4.0"
+
+# Docs
+sphinx                   = { version = "^4.5",  optional = true }
+sphinx-autodoc-typehints = { version = "^1.17", optional = true }
+sphinxcontrib-apidoc     = { version = "^0.3",  optional = true }
+furo                     = { version = "*",     optional = true }
+m2r2                     = { version = "^0.3",  optional = true }
+tomlkit                  = { version = "^0.10", optional = true }
+toml                     = { version = "^0.10", optional = true }
 
 [tool.poetry.dev-dependencies]
 black = "22.1.0"
 # Fix for black 22.1.0 (remove later)
 click = "8.0.4"
 isort = "^5.10"
+doc8 = "^0.10"
 pre-commit = "^2.18"
 mypy = "0.942"
 
@@ -37,14 +48,8 @@ pytest-cov = "^3.0"
 pytest-randomly = "^3.11"
 pytest-django = "^4.5"
 
-sphinx = "^4.5"
-sphinx-autodoc-typehints = "^1.17"
-sphinxcontrib-apidoc = "^0.3"
-furo = "*"
-m2r2 = "^0.3"
-tomlkit = "^0.10"
-toml = "^0.10"
-doc8 = "^0.10"
+[tool.poetry.extras]
+docs = ["sphinx", "sphinx-autodoc-typehints", "sphinxcontrib-apidoc", "furo", "m2r2", "tomlkit", "toml"]
 
 [tool.black]
 line-length = 120
