@@ -17,7 +17,6 @@ repository = "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter
 
 [tool.poetry.dependencies]
 python = "^3.10"
-poetry = "^1"
 autodonate = "^0.1.1"
 
 # Our dependecies

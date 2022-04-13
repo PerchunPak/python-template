@@ -17,7 +17,6 @@ repository = "https://github.com/fire-squad/autodonate-plugin-template"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-poetry = "^1"
 
 cookiecutter = "^1.7"
 jinja2-git = "^1.1"
