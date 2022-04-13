@@ -25,7 +25,7 @@ Django = "^4.0"
 
 # Docs
 sphinx                   = { version = "^4.5",  optional = true }
-sphinx-autodoc-typehints = { version = "^1.17", optional = true }
+sphinx-autodoc-typehints = { version = "^1.18", optional = true }
 sphinxcontrib-apidoc     = { version = "^0.3",  optional = true }
 furo                     = { version = "*",     optional = true }
 m2r2                     = { version = "^0.3",  optional = true }
