@@ -5,7 +5,7 @@ from os import remove
 
 def remove_trash():
     """Remove residual trash generated with `sphinx`."""
-    for file in glob("modules/{{ cookiecutter.project_name }}*.rst"):
+    for file in glob("modules/{{ cookiecutter.project_name.lower().replace('-', '_') }}*.rst"):
         remove(file)
 
 
