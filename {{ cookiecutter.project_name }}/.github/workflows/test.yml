@@ -34,7 +34,9 @@ jobs:
         cache: 'poetry'
 
     - name: Install dependencies
-      run: poetry install
+      run: |
+        poetry env use "${{ matrix.python-version }}"
+        poetry install
 
     - name: Run checks
       run: make test
