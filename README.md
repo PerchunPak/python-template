@@ -18,7 +18,7 @@ cookiecutter gh:fire-square/fire-square-style
 ### Если по какой то причине, это не работает, используйте:
 
 ```bash
-git clone https://fire-square/fire-square-style.git
+git clone https://github.com/fire-square/fire-square-style.git
 cd fire-square-style
 ```
 
