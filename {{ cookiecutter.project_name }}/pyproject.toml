@@ -16,11 +16,9 @@ readme = "README.md"
 repository = "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-autodonate = "^0.1.1"
+python = "^3.8"
 
 # Our dependecies
-Django = "^4.0"
 
 # Docs
 sphinx                   = { version = "^4.5",  optional = true }

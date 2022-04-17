@@ -1,7 +1,7 @@
 {
-  "project_name": "my-autodonate-plugin",
-  "organization": "fire-squad",
-  "project_description": "This is how autodonate plugin should look like!",
+  "project_name": "my-pretty-project",
+  "organization": "fire-square",
+  "project_description": "This is how project should look like!",
 
   "license": "AGPL3",
 

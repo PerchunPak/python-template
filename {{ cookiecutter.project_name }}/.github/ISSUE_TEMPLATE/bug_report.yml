@@ -19,15 +19,10 @@ body:
       description: >-
         Понятное и чистое описание того что вы ожидали чтобы произошло.
 
-  - type: input
-    id: commit
-    attributes:
-      label: Версия сайта
-      placeholder: cd autodonate; git rev-parse HEAD
 - type: input
-    id: commit_template
+    id: commit_repo
     attributes:
-      label: Версия плагина
+      label: Версия репозитория
       placeholder: cd {{ cookiecutter.project_name }}; git rev-parse HEAD
     validations:
       required: true

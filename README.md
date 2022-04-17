@@ -1,25 +1,25 @@
-# autodonate-plugin-template
+# fire-square-style
 
-[![Build Status](https://github.com/fire-squad/autodonate-plugin-template/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/fire-squad/autodonate/actions?query=workflow%3Atest)
-[![codecov](https://codecov.io/gh/fire-squad/autodonate-plugin-template/branch/master/graph/badge.svg)](https://codecov.io/gh/fire-squad/autodonate)
+[![Build Status](https://github.com/fire-square/fire-square-style/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/fire-square/fire-square-style/actions?query=workflow%3Atest)
+[![codecov](https://codecov.io/gh/fire-square/fire-square-style/branch/master/graph/badge.svg)](https://codecov.io/gh/fire-square/fire-square-style)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python 3.10 badge](https://img.shields.io/badge/python-3.10-blue)](https://www.python.org/downloads/)
 
-Cookiecutter template для плагина [сайта autodonate](https://github.com/fire-squad/autodonate). 
-Пожалуйста, используйте этот стиль.
+Пример стиля кода для всех Python проектов организации [Fire Square](https://github.com/fire-square).
+Пример можно использовать где угодно, теперь он не зависит от определенных проектов.
 
 ## Установка
 
 ```bash
 pip install cookiecutter jinja2-git lice
-cookiecutter gh:fire-squad/autodonate-plugin-template
+cookiecutter gh:fire-square/fire-square-style
 ```
 
 ### Если по какой то причине, это не работает, используйте:
 
 ```bash
-git clone https://fire-squad/autodonate-plugin-template.git
-cd autodonate-plugin-template
+git clone https://fire-square/fire-square-style.git
+cd fire-square-style
 ```
 
 Затем установите `poetry` [рекомендованым путем](https://python-poetry.org/docs/master/#installation).
@@ -45,4 +45,4 @@ cookiecutter .
 
 ## Проекты использующие это
 
-[Список open-source проектов на GitHub с нашим упоминанием.](https://github.com/search?q=autodonate-plugin-template&type=Code)
+[Список open-source проектов на GitHub с нашим упоминанием.](https://github.com/search?q=fire-square-style&type=Code)

@@ -8,7 +8,7 @@ updates:
   ignore:
     - dependency-name: "*"
       update-types: [ "version-update:semver-patch" ]
-    # Update these dependencies with autodonate-plugin-template
+    # Update these dependencies with fire-square-style
     - dependency-name: "Django"
     ### Docs section ###
     - dependency-name: "sphinx"

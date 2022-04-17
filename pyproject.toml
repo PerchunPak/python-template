@@ -4,19 +4,19 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry]
-name = "autodonate-plugin-template"
-description = "Cookiecutter template для плагина сайта autodonate."
+name = "fire-square-style"
+description = "Пример стиля кода для всех Python проектов организации Fire square."
 version = "0.1.0"
 license = "MIT"
 
-authors = ["fire-squad <team@firesquare.ru>"]
+authors = ["fire-square <team@firesquare.ru>"]
 
 readme = "README.md"
 
-repository = "https://github.com/fire-squad/autodonate-plugin-template"
+repository = "https://github.com/fire-square/fire-square-style"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.7"
 
 cookiecutter = "^1.7"
 jinja2-git = "^1.1"

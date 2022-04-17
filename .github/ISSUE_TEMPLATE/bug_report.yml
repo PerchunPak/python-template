@@ -19,16 +19,11 @@ body:
       description: >-
         Понятное и чистое описание того что вы ожидали чтобы произошло.
 
-  - type: input
-    id: commit
-    attributes:
-      label: Версия сайта
-      placeholder: cd autodonate; git rev-parse HEAD
 - type: input
     id: commit_template
     attributes:
-      label: Версия модуля
-      placeholder: cd autodonate-plugin-template; git rev-parse HEAD
+      label: Версия примера
+      placeholder: cd fire-square-style; git rev-parse HEAD
     validations:
       required: true
   - type: input
