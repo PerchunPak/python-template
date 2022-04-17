@@ -30,3 +30,8 @@ updates:
   schedule:
     interval: daily
     time: "00:00"
+- package-ecosystem: github-actions
+  directory: "/{{ cookiecutter.project_name }}"
+  schedule:
+    interval: daily
+    time: "00:00"
