@@ -19,7 +19,7 @@ body:
       description: >-
         Понятное и чистое описание того что вы ожидали чтобы произошло.
 
-- type: input
+  - type: input
     id: commit_repo
     attributes:
       label: Версия репозитория
