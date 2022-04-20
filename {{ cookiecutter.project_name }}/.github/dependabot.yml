@@ -25,6 +25,7 @@ updates:
     - dependency-name: "black"
     - dependency-name: "click"
     - dependency-name: "isort"
+    - dependency-name: "pycln"
     - dependency-name: "doc8"
     - dependency-name: "pre-commit"
     - dependency-name: "mypy"

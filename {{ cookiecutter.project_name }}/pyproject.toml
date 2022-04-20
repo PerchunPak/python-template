@@ -39,6 +39,7 @@ black = "22.1.0"
 # Fix for black 22.1.0 (remove later)
 click = "8.0.4"
 isort = "^5.10"
+pycln = "^1.3"
 doc8 = "^0.11"
 pre-commit = "^2.18"
 mypy = "0.942"
