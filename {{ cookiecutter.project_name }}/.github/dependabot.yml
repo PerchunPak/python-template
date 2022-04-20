@@ -8,8 +8,11 @@ updates:
   ignore:
     - dependency-name: "*"
       update-types: [ "version-update:semver-patch" ]
+    # Update these dependencies with CI (poetry update)
+    - dependency-name: "colorama"
     # Update these dependencies with fire-square-style
-    - dependency-name: "Django"
+    - dependency-name: "python-decouple"
+    - dependency-name: "structlog"
     ### Docs section ###
     - dependency-name: "sphinx"
     - dependency-name: "sphinx-autodoc-typehints"
@@ -31,8 +34,9 @@ updates:
     - dependency-name: "safety"
     - dependency-name: "pytest"
     - dependency-name: "pytest-cov"
+    - dependency-name: "pytest-mock"
+    - dependency-name: "pytest-testmon"
     - dependency-name: "pytest-randomly"
-    - dependency-name: "pytest-django"
 
 - package-ecosystem: github-actions
   directory: "/"

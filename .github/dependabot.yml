@@ -22,8 +22,11 @@ updates:
       update-types: [ "version-update:semver-minor" ]
     - dependency-name: "flake8-docstrings"
       update-types: [ "version-update:semver-minor" ]
+    - dependency-name: "python-decouple"
+      update-types: [ "version-update:semver-minor" ]
 
     - dependency-name: "pydocstyle"
+    - dependency-name: "colorama"
 
 - package-ecosystem: github-actions
   directory: "/"
