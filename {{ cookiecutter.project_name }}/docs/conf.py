@@ -34,7 +34,7 @@ def _get_project_meta():
 
 pkg_meta = _get_project_meta()
 project = str(pkg_meta["name"])
-copyright = '{% now "local", "%Y" %}, {{ cookiecutter.organization }}'
+copyright = "{% now "local", "%Y" %}, {{ cookiecutter.organization }}"
 author = "{{ cookiecutter.organization }}"
 
 # The short X.Y version
