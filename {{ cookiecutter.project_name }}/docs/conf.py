@@ -12,6 +12,7 @@
 
 import os
 import sys
+from datetime import date
 
 import tomlkit
 
@@ -34,7 +35,7 @@ def _get_project_meta():
 
 pkg_meta = _get_project_meta()
 project = str(pkg_meta["name"])
-copyright = "{% now "local", "%Y" %}, {{ cookiecutter.organization }}"
+copyright = str(date.today().year) + ", {{ cookiecutter.organization }}"
 author = "{{ cookiecutter.organization }}"
 
 # The short X.Y version
