@@ -19,8 +19,7 @@ updates:
     - dependency-name: "sphinxcontrib-apidoc"
     - dependency-name: "furo"
     - dependency-name: "m2r2"
-    - dependency-name: "tomlkit"
-    - dependency-name: "toml"
+    - dependency-name: "tomli"
     ### Dev section ###
     - dependency-name: "black"
     - dependency-name: "click"

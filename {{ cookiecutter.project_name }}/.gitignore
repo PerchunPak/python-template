@@ -1,11 +1,9 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/linux,python,windows,pycharm+all,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,python,windows,pycharm+all,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/linux,python,windows,visualstudiocode,pycharm+all
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,python,windows,visualstudiocode,pycharm+all
 
 ### Linux ###
 *~
-
-test.sh
 
 # temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
@@ -76,20 +74,10 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 ### PyCharm+all Patch ###
-# Ignores the whole .idea folder and all .iml files
-# See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
+# Ignore everything but code style settings and run configurations
+# that are supposed to be shared within teams.
 
 .idea/*
-
-# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
-
-*.iml
-modules.xml
-.idea/misc.xml
-*.ipr
-
-# Sonarlint plugin
-.idea/sonarlint
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -195,7 +183,15 @@ ipython_config.py
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 #poetry.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
 
 # Celery stuff
@@ -239,7 +235,7 @@ dmypy.json
 cython_debug/
 
 # PyCharm
-#  JetBrains specific template is maintainted in a separate JetBrains.gitignore that can
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
@@ -247,11 +243,6 @@ cython_debug/
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
@@ -265,6 +256,10 @@ cython_debug/
 .ionide
 
 # Support for Project snippet scope
+.vscode/*.code-snippets
+
+# Ignore code-workspaces
+*.code-workspace
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -292,7 +287,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/linux,python,windows,pycharm+all,visualstudiocode
-
-docs/modules/{{ cookiecutter.project_name.lower().replace('-', '_') }}*.rst
-logs/
+# End of https://www.toptal.com/developers/gitignore/api/linux,python,windows,visualstudiocode,pycharm+all

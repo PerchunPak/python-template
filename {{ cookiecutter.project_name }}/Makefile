@@ -8,7 +8,7 @@ style:
 	poetry run black .
 	poetry run isort .
 	poetry run pycln .
-	poetry run mypy --install-types --non-interactive {{ cookiecutter.project_name.lower().replace('-', '_') }} tests
+	poetry run mypy --install-types --non-interactive .
 	poetry run flake8 .
 	poetry run doc8 -q docs
 

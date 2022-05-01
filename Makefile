@@ -7,7 +7,7 @@ lint: style
 style:
 	poetry run black .
 	poetry run isort .
-	poetry run mypy --install-types --non-interactive hooks tests
+	poetry run mypy --install-types --non-interactive .
 
 .PHONY: unit
 unit:

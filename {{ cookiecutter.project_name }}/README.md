@@ -23,7 +23,7 @@ pip install {{ cookiecutter.project_name }}
 ## Установка для локальной разработки
 
 ```bash
-git clone https://https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}.git
+git clone https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}.git
 cd {{ cookiecutter.project_name }}
 ```
 
