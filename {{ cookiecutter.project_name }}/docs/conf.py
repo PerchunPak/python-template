@@ -13,6 +13,7 @@
 import os
 import sys
 from datetime import date
+from typing import Dict
 
 from tomli import load as toml_parse
 
