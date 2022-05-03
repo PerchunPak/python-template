@@ -9,6 +9,7 @@
   "_copy_without_render": [
     ".venv",
     "docs/_build",
+    "docs/_autoapi_templates",
     ".github/workflows"
   ]
 }
