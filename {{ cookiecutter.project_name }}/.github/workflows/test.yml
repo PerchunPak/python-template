@@ -2,8 +2,6 @@ name: Test
 
 on:
   push:
-    branches:
-      - master
   pull_request:
 
 concurrency:
@@ -11,7 +9,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -47,27 +45,28 @@ jobs:
       with:
         file: ./coverage.xml
 
+  post-test:
+    runs-on: ubuntu-latest
+    needs: 'test'
+
+    steps:
     - name: Configure git
-      if: ${{ matrix.python-version == '3.10' }}
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
 
     - name: Commit codestyle
-      if: ${{ matrix.python-version == '3.10' }}
       continue-on-error: true
       run: |
         git commit -am "Apply codestyle :pencil2: [skip ci]" || true
 
     - name: Update poetry
-      if: ${{ matrix.python-version == '3.10' }}
       continue-on-error: true
       run: |
         poetry update
         git commit -am "Update poetry.lock :chart_with_upwards_trend:" || true
 
     - name: Push changes
-      if: ${{ matrix.python-version == '3.10' }}
       continue-on-error: true
       uses: ad-m/github-push-action@master
       with:
