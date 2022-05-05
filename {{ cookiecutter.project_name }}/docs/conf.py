@@ -139,7 +139,7 @@ html_static_path = ["_static"]
 napoleon_include_private_with_doc = True
 
 # Configuration for autoapi
-autoapi_dirs = [".."]
+autoapi_dirs = ["../{{cookiecutter.project_name.lower().replace('-', '_')}}"]
 autoapi_template_dir = "_autoapi_templates"
 
 # -- Options for todo extension ----------------------------------------------
