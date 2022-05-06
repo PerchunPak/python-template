@@ -69,7 +69,7 @@ jobs:
       run: |
         poetry update
         cd '{{ cookiecutter.project_name }}'
-        poetry lock --no-update
+        poetry lock
         git commit -am "Update poetry.lock :chart_with_upwards_trend:" || true
 
     - name: Push changes
