@@ -78,17 +78,13 @@ jobs:
         git config --local user.name "github-actions[bot]"
 
     - name: Apply codestyle
-      run: make style
-
-    - name: Commit codestyle
-      continue-on-error: true
       run: |
+        make style
         git commit -am "Apply codestyle :pencil2: [skip ci]" || true
 
-    - name: Update poetry
-      continue-on-error: true
+    - name: Update poetry.lock
       run: |
-        poetry update
+        poetry update --lock
         cd '{{ cookiecutter.project_name }}'
         poetry lock
         git commit -am "Update poetry.lock :chart_with_upwards_trend:" || true
