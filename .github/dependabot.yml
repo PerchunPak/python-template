@@ -28,10 +28,8 @@ updates:
     - dependency-name: "pydocstyle"
     - dependency-name: "colorama"
 
-# this is hard coded to check /.github/workflows even if `directory` parameter not a root path
-# see https://github.com/dependabot/dependabot-core/issues/4024
 - package-ecosystem: github-actions
-  directory: "/{{ cookiecutter.project_name }}/.github/workflows"
+  directory: "/"
   schedule:
     interval: daily
     time: "00:00"
