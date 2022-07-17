@@ -23,9 +23,6 @@ jinja2-git = "~1.1"
 MarkupSafe = "~1"
 lice = "~0.6"
 
-# CI
-GitPython = { version = "~3.1", optional = true }
-
 [tool.poetry.dev-dependencies]
 black = "~22"
 isort = "~5.10"
@@ -40,8 +37,7 @@ pytest-mock = "~3.8"
 pytest-randomly = "~3.12"
 Faker = "~13.15"
 
-[tool.poetry.extras]
-ci = ["GitPython"]
+GitPython = "~3.1"
 
 [tool.black]
 line-length = 120
