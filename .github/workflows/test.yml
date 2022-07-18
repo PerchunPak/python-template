@@ -90,7 +90,7 @@ jobs:
                 "branchName": "${{ github.head_ref || github.ref_name }}"
               },
               "message": { "headline": "Apply codestyle :pencil2:" },
-              "fileChanges": `python .github/commit_and_push.py`,
+              "fileChanges": `python .github/file_changes_generator.py`,
               "expectedHeadOid": "`git rev-parse HEAD`"
         }}}
         GRAPHQL
@@ -113,7 +113,7 @@ jobs:
                 "branchName": "${{ github.head_ref || github.ref_name }}"
               },
               "message": { "headline": "Update poetry.lock :chart_with_upwards_trend:" },
-              "fileChanges": `python .github/commit_and_push.py`,
+              "fileChanges": `python .github/file_changes_generator.py`,
               "expectedHeadOid": "`git rev-parse HEAD`"
         }}}
         GRAPHQL
