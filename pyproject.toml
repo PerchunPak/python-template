@@ -27,7 +27,7 @@ lice = "~0.6"
 black = "~22"
 isort = "~5.10"
 pre-commit = "~2.20"
-mypy = "0.961"
+mypy = "0.971"
 
 safety = "~2.1"
 
