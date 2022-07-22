@@ -4,6 +4,21 @@ from sys import exit
 MODULE_REGEX = r"^[a-z][a-z0-9\-]+[a-z0-9]$"
 MODULE_NAME = "{{ cookiecutter.project_name }}"
 
+OTHER_LANGUAGES_SUPPORT = "{{ cookiecutter.other_languages_support }}"
+UKRAINIAN_LANGUAGE_SUPPORT = "{{ cookiecutter.ukrainian_language_support }}"
+RUSSIAN_LANGUAGE_SUPPORT = "{{ cookiecutter.russian_language_support }}"
+
+
+def validate_bool_values() -> None:
+    """This validator is used to ensure that all bool values is valid.
+
+    Raises:
+        ValueError: When one of bool values is not ``y`` or ``n``.
+    """
+    for bool_value in [OTHER_LANGUAGES_SUPPORT, UKRAINIAN_LANGUAGE_SUPPORT, RUSSIAN_LANGUAGE_SUPPORT]:
+        if bool_value not in ["y", "n"]:
+            raise ValueError("ERROR: The value of {0} is not a `y` or `n`.".format(bool_value))
+
 
 def validate_project_name() -> None:
     """This validator is used to ensure that `project_name` is valid.
@@ -31,6 +46,7 @@ def validate_project_name() -> None:
 
 
 try:
+    validate_bool_values()
     validate_project_name()
 except ValueError as ex:
     print(ex)

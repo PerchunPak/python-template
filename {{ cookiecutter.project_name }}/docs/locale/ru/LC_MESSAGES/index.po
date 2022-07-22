@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) {% now 'utc', '%Y' %}, {{ cookiecutter.organization }}
+# This file is distributed under the same license as the {{ cookiecutter.project_name }} package.
+# Perchun Pak <perchunpak@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: {{ cookiecutter.project_name }} 0.1.0\n"
+"Report-Msgid-Bugs-To: GitHub Bug Tracker\n"
+"POT-Creation-Date: {% now 'local', '%Y-%m-%d %H:%M%z' %}\n"
+"PO-Revision-Date: {% now 'local', '%Y-%m-%d %H:%M%z' %}\n"
+"Last-Translator: Perchun Pak <perchunpak@gmail.com>\n"
+"Language: ru\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: ../../index.rst:4 ../../index.rst:6
+msgid "Pages"
+msgstr "Страницы"
+
+#: ../../index.rst:13
+msgid "API Reference"
+msgstr "API Документация"
+
+#: ../../../README.md:3
+msgid "{{ cookiecutter.project_name }}"
+msgstr "{{ cookiecutter.project_name }}"
+
+#: ../../../README.md:-1
+msgid "Build Status"
+msgstr "Статус Сборки"
+
+#: ../../../README.md:-1
+msgid "codecov"
+msgstr "codecov"
+
+#: ../../../README.md:-1
+msgid "Documentation Build Status"
+msgstr "Статус Сборки Документации"
+
+#: ../../../README.md:-1
+msgid "Supported languages"
+msgstr "Поддерживаемые языки"
+
+#: ../../../README.md:-1
+msgid "Code style: black"
+msgstr "Стиль Кода: black"
+
+#: ../../../README.md:-1
+msgid "Python support versions badge (from pypi)"
+msgstr "Бейдж с поддерживаемыми версиями Python (из pypi)"
+
+#: ../../../README.md:36
+msgid "{{ cookiecutter.project_description }}"
+msgstr ""
+
+{% if cookiecutter.ukrainian_language_support == 'y' -%}
+#: ../../../README.md:39
+msgid "`Документація українською <https://{{ cookiecutter.project_name }}.readthedocs.io/uk_UA/latest>`_"
+msgstr "`Документація українською <https://{{ cookiecutter.project_name }}.readthedocs.io/uk_UA/latest>`_"
+
+{% endif %}#: ../../../README.md:40
+msgid "`Документация на русском <https://{{ cookiecutter.project_name }}.readthedocs.io/ru/latest>`_"
+msgstr "`Docs on English <https://{{ cookiecutter.project_name }}.readthedocs.io/en/latest>`_"
+
+#: ../../../README.md:43
+msgid "Features"
+msgstr "Особенности"
+
+#: ../../../README.md:46
+msgid "Free! We don't want any money from you!"
+msgstr "Бесплатно! Мы не попросим ни копейки за использование!"
+
+#: ../../../README.md:47
+msgid "Add yours!"
+msgstr "Добавьте свое!"
+
+#: ../../../README.md:50
+msgid "Installing"
+msgstr "Установка"
+
+#: ../../../README.md:57
+msgid "Installing for local developing"
+msgstr "Установка для локального разработки"
+
+#: ../../../README.md:65
+msgid "Installing ``poetry``"
+msgstr "Установка ``poetry``"
+
+#: ../../../README.md:67
+msgid ""
+"Next we need install ``poetry`` with `recomended way <https://python-"
+"poetry.org/docs/master/#installation>`_."
+msgstr ""
+"Затем установите ``poetry`` `рекомендованым путем <https://python-"
+"poetry.org/docs/master/#installation>`_."
+
+#: ../../../README.md:69
+msgid "If you use Linux, use command:"
+msgstr "Если вы на платформе Linux, используйте команду:"
+
+#: ../../../README.md:75
+msgid "If you use Windows, open PowerShell with admin privileges and use:"
+msgstr ""
+"Если вы на Windows, откройте PowerShell от имени администратора и "
+"используйте:"
+
+#: ../../../README.md:82
+msgid "Installing dependencies"
+msgstr "Установка зависимостей"
+
+#: ../../../README.md:89
+msgid "Compiling translations"
+msgstr "Компиляция файлов перевода"
+
+#: ../../../README.md:91
+msgid "This requered even if you want just use english."
+msgstr "Это необходимо даже если вы хотите просто использовать английский."
+
+#: ../../../README.md:98
+msgid "Configuration"
+msgstr "Конфигурация"
+
+#: ../../../README.md:100
+msgid ""
+"All configuration happends in ``config.yml``\\ , or with enviroment "
+"variables."
+msgstr ""
+"Вся настройка бота происходит в файле ``config.yml``\\ , или с помощью "
+"переменных окружения."
+
+#: ../../../README.md:103
+msgid "If something is not clear"
+msgstr "Если что то не понятно"
+
+#: ../../../README.md:105
+msgid "You can always write me!"
+msgstr "Вы всегда можете написать мне!"
+
+#: ../../../README.md:108
+msgid "Example"
+msgstr "Пример"
+
+#: ../../../README.md:118
+msgid "Updating"
+msgstr "Обновление"
+
+#: ../../../README.md:120
+msgid ""
+"For updating, just redownload repository (do not forget save config and "
+"database), if you used ``git`` for donwloading, just run ``git pull``."
+msgstr ""
+"Для обновления бота, просто скачайте заново репозиторий (предварительно "
+"сохранив конфиги и базу данных), или если выиспользовали ``git`` для "
+"установки запустите команду ``git pull``."
+
+#: ../../../README.md:123
+msgid ""
+"After that, you need update translations and database, commands the same "
+"as in installing section:"
+msgstr ""
+"После чего, нужно обновить переводы и базу данных, шаги аналогичны "
+"установке бота:"
+
+#: ../../../README.md:131
+msgid "Thanks"
+msgstr "Спасибо"
+
+#: ../../../README.md:133
+msgid ""
+"This project was generated with `\\ ``fire-square-style`` "
+"<https://github.com/fire-square/fire-square-style>`_. Current template "
+"version: `{% gitcommit %} <https://github.com"
+"/fire-square/fire-square-"
+"style/tree/{% gitcommit %}>`_. See what `updated"
+" <https://github.com/fire-square/fire-square-"
+"style/compare/{% gitcommit %}...master>`_."
+msgstr ""
+"Этот проект был сгенерирован с помощью `\\ fire-square-style "
+"<https://github.com/fire-square/fire-square-style>`_. Текущая версия "
+"примера: `{% gitcommit %} <https://github.com"
+"/fire-square/fire-square-"
+"style/tree/{% gitcommit %}>`_.Смотрите что "
+"`обновилось <https://github.com/fire-square/fire-square-"
+"style/compare/{% gitcommit %}...master>`_."
+
+#: ../../index.rst:20
+msgid "Indexes and tables"
+msgstr "Индексы и таблицы"
+
+#: ../../index.rst:22
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+#: ../../index.rst:23
+msgid ":ref:`modindex`"
+msgstr ":ref:`modindex`"
+
+#: ../../index.rst:24
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+

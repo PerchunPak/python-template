@@ -1,6 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: "Пустой баг репорт"
+  - name: "Empty Issue"
     url: https://github.com/fire-square/fire-square-style/issues/new
-    about: Только для участников репозитория.
-
+    about: Only for maintainers.

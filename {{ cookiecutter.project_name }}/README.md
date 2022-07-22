@@ -5,60 +5,75 @@
 [![Build Status](https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}/actions?query=workflow%3Atest)
 [![codecov](https://codecov.io/gh/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}/branch/master/graph/badge.svg)](https://codecov.io/gh/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }})
 [![Documentation Build Status](https://readthedocs.org/projects/{{ cookiecutter.project_name }}/badge/?version=latest)](https://{{ cookiecutter.project_name }}.readthedocs.io/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+{% if cookiecutter.other_languages_support == 'y' -%}
+[![Supported languages](https://img.shields.io/badge/languages-en{% if cookiecutter.ukrainian_language_support == 'y' -%}%20%7C%20uk{% endif %}{% if cookiecutter.russian_language_support == 'y' -%}%20%7C%20ru{% endif %}-brightgreen)](https://{{ cookiecutter.project_name }}.readthedocs.io)
+{% endif %}[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python support versions badge (from pypi)](https://img.shields.io/pypi/pyversions/{{ cookiecutter.project_name }})](https://www.python.org/downloads/)
 
 {{ cookiecutter.project_description }}
+{% if cookiecutter.other_languages_support == 'y' -%}
+{% if cookiecutter.ukrainian_language_support == 'y' -%}
+- [Документація українською](https://{{ cookiecutter.project_name }}.readthedocs.io/uk_UA/latest){% endif %}
+{% if cookiecutter.russian_language_support == 'y' -%}
+- [Документация на русском](https://{{ cookiecutter.project_name }}.readthedocs.io/ru/latest){% endif %}
+{% endif %}
+## Features
 
-## Особенности
+- Free! We don't want any money from you!
+- Add yours!
 
-- Бесплатно! Мы не попросим ни копейки за использование!
-- Добавьте свое!
-
-
-## Установка
+## Installing
 
 ```bash
 pip install {{ cookiecutter.project_name }}
 ```
 
-## Установка для локальной разработки
+## Installing for local developing
 
 ```bash
 git clone https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter.project_name }}.git
 cd {{ cookiecutter.project_name }}
 ```
 
-Затем установите `poetry` [рекомендованым путем](https://python-poetry.org/docs/master/#installation).
+### Installing `poetry`
 
-Если вы на платформе Linux, используйте команду:
+Next we need install `poetry` with [recomended way](https://python-poetry.org/docs/master/#installation).
+
+If you use Linux, use command:
 
 ```bash
 curl -sSL https://install.python-poetry.org | python -
 ```
 
-Если вы на Windows, откройте PowerShell от имени администратора и используйте:
+If you use Windows, open PowerShell with admin privileges and use:
 
 ```powershell
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
-Внимание: На момент написания текста (03.3.2022), существует баг, который вызывает предупреждение при использовании любой команды. 
-Если вы с таким столкнулись, можете установить poetry другим путем:
+### Installing dependencies
 
 ```bash
-pip install poetry
-```
+poetry install --no-dev
+```{% if cookiecutter.other_languages_support == 'y' -%}
 
-Но учитывайте что это не рекомендованый путь, вы возможно не сможете использовать некоторые функции (например `poetry self update`).
+### Compiling translations
 
-И наконец установим зависимости:
+This requered even if you want just use english.
 
 ```bash
-poetry install
-```
+poetry run pybabel compile -d locales
+```{% endif %}
 
-## Пример
+### Configuration
+
+All configuration happends in `config.yml`, or with enviroment variables.
+
+### If something is not clear
+
+You can always write me!
+
+## Example
 
 ```py
 from {{ cookiecutter.project_name.lower().replace('-', '_') }}.example import some_function
@@ -67,8 +82,19 @@ print(some_function(3, 4))
 # => 7
 ```
 
-## Спасибо
+## Updating
 
-Этот проект был сгенерирован с помощью [`fire-square-style`](https://github.com/fire-square/fire-square-style).
-Текущая версия примера: [{% gitcommit %}](https://github.com/fire-square/fire-square-style/tree/{% gitcommit %}).
-Смотрите что [обновилось](https://github.com/fire-square/fire-square-style/compare/{% gitcommit %}...master) с того времени.
+For updating, just re-download repository (do not forget save config),
+if you used `git` for downloading, just run `git pull`.
+{% if cookiecutter.other_languages_support == 'y' -%}
+After that, you need update translations, commands the same as in installing section:
+
+```bash
+poetry run pybabel compile -d locales
+```
+{% endif %}
+## Thanks
+
+This project was generated with [fire-square-style](https://github.com/fire-square/fire-square-style).
+Current template version: [{% gitcommit %}](https://github.com/fire-square/fire-square-style/tree/{% gitcommit %}).
+See what [updated](https://github.com/fire-square/fire-square-style/compare/{% gitcommit %}...master).

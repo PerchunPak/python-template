@@ -1,8 +1,5 @@
 SHELL:=/usr/bin/env bash
 
-.PHONY: lint
-lint: style
-
 .PHONY: style
 style:
 	poetry run black .

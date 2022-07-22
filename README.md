@@ -7,44 +7,59 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python 3.10 badge](https://img.shields.io/badge/python-3.10-blue)](https://www.python.org/downloads/)
 
-Пример стиля кода для всех Python проектов организации [Fire Square](https://github.com/fire-square).
-Пример можно использовать где угодно, теперь он не зависит от определенных проектов.
+Code template for all projects [firesquare](https://github.com/fire-square) organization.
+Template can be used anywhere, this includes non-[firesquare](https://github.com/fire-square) projects.
 
-## Установка
+## Installing
 
 ```bash
 pip install cookiecutter jinja2-git lice
 cookiecutter gh:fire-square/fire-square-style
 ```
 
-### Если по какой то причине, это не работает, используйте:
+### If this doesn't work, try this:
 
 ```bash
 git clone https://github.com/fire-square/fire-square-style.git
 cd fire-square-style
 ```
 
-Затем установите `poetry` [рекомендованым путем](https://python-poetry.org/docs/master/#installation).
+### Installing `poetry`
 
-Если вы на платформе Linux, используйте команду:
+Next we need install `poetry` with [recomended way](https://python-poetry.org/docs/master/#installation).
+
+If you use Linux, use command:
 
 ```bash
 curl -sSL https://install.python-poetry.org | python -
 ```
 
-Если вы на Windows, откройте PowerShell от имени администратора и используйте:
+If you use Windows, open PowerShell with admin privileges and use:
 
 ```powershell
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
-И наконец установим зависимости, а затем запустим темплейт:
+### Installing dependencies
 
 ```bash
-poetry install
+poetry install --no-dev
+```
+
+### Run template
+
+```bash
 cookiecutter .
 ```
 
-## Проекты использующие это
+### If something is not clear
 
-[Список open-source проектов на GitHub с нашим упоминанием.](https://github.com/search?q=fire-square-style&type=Code)
+You can always write us!
+
+## Updating
+
+For updating, see `See what updated` diff in generated README.md file, in the end of it.
+
+## Projects using it
+
+[List of open-source projects on GitHub with our mention.](https://github.com/search?q=fire-square-style&type=Code)

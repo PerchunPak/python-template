@@ -3,13 +3,16 @@
   "organization": "fire-square",
   "project_description": "This is how project should look like!",
 
+  "other_languages_support": "y",
+  "ukrainian_language_support": "y",
+  "russian_language_support": "y",
+
   "license": "AGPL3",
 
   "_extensions": ["jinja2_git.GitExtension"],
   "_copy_without_render": [
     ".venv",
     "docs/_build",
-    "docs/_autoapi_templates",
     ".github/workflows"
   ]
 }

@@ -1,5 +1,9 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/linux,python,windows,visualstudiocode,pycharm+all
+{% if cookiecutter.other_languages_support == 'y' -%}
+# Ignore false-positive created files for the API translation. It is deactivated for non-English language.
+/docs/locale/**/LC_MESSAGES/api/{{ cookiecutter.project_name }}/**/*.po
+
+{% endif %}# Created by https://www.toptal.com/developers/gitignore/api/linux,python,windows,visualstudiocode,pycharm+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,python,windows,visualstudiocode,pycharm+all
 
 ### Linux ###

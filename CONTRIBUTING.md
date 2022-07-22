@@ -1,68 +1,70 @@
-# Как помочь
+# Contributing
 
 
-## Зависимости
+## Dependencies
 
-Мы используем [poetry](https://github.com/python-poetry/poetry) для управления зависимостями.
+We use [poetry](https://github.com/python-poetry/poetry) to manage dependencies.
 
-Для их установки используйте аргумент `install`:
+To install them you would need to run `install` command:
 
 ```bash
 poetry install
 ```
 
-Так же установим `pre commit hooks` в `git`:
+Also, let's install `pre commit hooks` in `git`:
 ```bash
 poetry run pre-commit install
 ```
 
-Для активации вашего `virtualenv` используйте `poetry shell`.
+To activate your `virtualenv` run `poetry shell`.
 
 
-## Одна магическая команда
+## One magic command
 
-Используйте `make test` для запуска всего что у нас есть!
+Run `make test` to run everything we have!
+
+Also, because of conflict between `pytest-testmon` and `pytest-cov` we use option `--no-cov` in `make test`, so in this way
+we give prioritize to `pytest-testmon`. If you want to generate report with `pytest-cov`, use `make test ci=1`.
 
 
-## Тесты
+## Tests
 
-Мы используем `pytest` и `black` для контроля качества.
+We use `black`, `flake8` and `pytest` for quality control.
 
-Для запуска форматера:
+To run formatter:
 
 ```bash
 black .
 ```
 
-Для запуска всех тестов:
+To run linter (it checks only docstrings, [more info](http://www.pydocstyle.org/en/latest/error_codes.html)):
+```bash
+flake8 .
+```
+
+To run all tests:
 
 ```bash
 pytest
 ```
 
-Если вы хотите настроить конфигурацию утилит, вы должны сделать это в `setup.cfg`.
-Эти шаги являются обязательными во время CI.
-
-Этот шаг является обязательными во время CI.
-
-### Перед началом работы
-
-Перед подачей вашего кода убедитесь что:
-
-1. Запустите тесты `pytest`, чтобы убедиться что всё работает
-2. Добавьте правки
-3. Добавьте тесты для правок
-4. Отредактируйте документацию, если вы изменили что-то важное
-5. Обновите `CHANGELOG.md` с коротким описанием Ваших изменений
-6. Запустите тесты `pytest` снова, чтобы убедиться что всё работает
-7. Запустите `mypy`, чтобы убедиться в корректности типов
-8. Запустите `flake8`, чтобы убедиться в корректном стиле кода
-9. Запустите `doc8`, чтобы убедиться что документация работает
+If you want to customize util's parameter, you should do this in `setup.cfg`.
+These steps are mandatory during the CI.
 
 
-## Другая помощь
+## Type checks
 
-Вы можете помочь проекту распространяя информацию о нём.
-Так же большой поддержкой будет, например, написание
-короткой статьи о том как вы используете этот проект.
-Вы также можете делаться своими практиками с нами.
+We use `mypy` to run type checks on our code:
+
+```bash
+mypy .
+```
+
+This step is mandatory during the CI.
+
+
+## Other help
+
+You can contribute by spreading a word about this library. It would also 
+be a huge contribution to write a short article on how you are using this 
+project. You can also share your best practices with us.

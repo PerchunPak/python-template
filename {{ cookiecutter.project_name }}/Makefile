@@ -1,8 +1,5 @@
 SHELL:=/usr/bin/env bash
 
-.PHONY: lint
-lint: style
-
 .PHONY: style
 style:
 	poetry run black .
@@ -26,5 +23,12 @@ package:
 	poetry run pip check
 	poetry run safety check --full-report
 
-.PHONY: test
-test: lint package unit
+{% if cookiecutter.other_languages_support == 'y' -%}
+.PHONY: translate
+translate:
+	poetry run pybabel extract -o ./locales/base.pot ./{{cookiecutter.project_name.lower().replace('-', '_')}}
+	poetry run pybabel update -d ./locales -i ./locales/base.pot
+	poetry run pybabel compile -d ./locales
+
+{% endif %}.PHONY: test
+test: style package unit

@@ -8,12 +8,18 @@ https://github.com/wemake-services/wemake-python-package
 
 from os import system
 from os.path import curdir, realpath
+from shutil import rmtree
 from sys import exit
 from textwrap import dedent
 
 # Get the root project directory:
 PROJECT_DIRECTORY = realpath(curdir)
 PROJECT_NAME = "{{ cookiecutter.project_name }}"
+
+# Translations info
+OTHER_LANGUAGES_SUPPORT = "{{ cookiecutter.other_languages_support }}"
+UKRAINIAN_LANGUAGE_SUPPORT = "{{ cookiecutter.ukrainian_language_support }}"
+RUSSIAN_LANGUAGE_SUPPORT = "{{ cookiecutter.russian_language_support }}"
 
 # We need these values to generate correct license:
 LICENSE = "{{ cookiecutter.license }}"
@@ -35,6 +41,22 @@ def generate_license() -> None:
         exit(1)
 
 
+def handle_translations() -> None:
+    """Delete specific or all translation files, depends on configuration."""
+    if not OTHER_LANGUAGES_SUPPORT == "y":
+        rmtree(f"{PROJECT_DIRECTORY}/locales")
+        rmtree(f"{PROJECT_DIRECTORY}/docs/locale")
+        return
+
+    if not UKRAINIAN_LANGUAGE_SUPPORT == "y":
+        rmtree(f"{PROJECT_DIRECTORY}/locales/uk")
+        rmtree(f"{PROJECT_DIRECTORY}/docs/locale/uk_UA")
+
+    if not RUSSIAN_LANGUAGE_SUPPORT == "y":
+        rmtree(f"{PROJECT_DIRECTORY}/locales/ru")
+        rmtree(f"{PROJECT_DIRECTORY}/docs/locale/ru")
+
+
 def print_futher_instuctions() -> None:
     """Shows user what to do next after project creation."""
     message = """
@@ -46,4 +68,5 @@ def print_futher_instuctions() -> None:
 
 
 generate_license()
+handle_translations()
 print_futher_instuctions()

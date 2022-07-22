@@ -1,8 +1,8 @@
-# История изменений
+# Changelog
 
-Мы следуем стандартному стилю [Semantic Versions](https://semver.org/).
+We follow [Semantic Versions](https://semver.org/) style.
 
 
-## Версия 0.1.0
+## Version 0.1.0
 
-- Репозиторий инициализирован
+- Repository initialised.

@@ -19,7 +19,7 @@ repository = "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter
 python = "^3.8"
 
 # Our dependecies
-python-decouple = "~3"
+omegaconf = "~2.2"
 structlog = "22.1.0"
 ### For colors in structlog ###
 ### Only needed for Windows ###
@@ -29,9 +29,11 @@ colorama = { version = "*", markers="platform_system == 'Windows'" }
 sphinx                   = { version = "~5.0",  optional = true }
 sphinx-autodoc-typehints = { version = "~1.18", optional = true }
 sphinx-autoapi           = { version = "~1.8",  optional = true }
+sphinx-intl              = { version = "~2.0",  optional = true }  # only for locales
 furo                     = { version = "*",     optional = true }
 m2r2                     = { version = "~0.3",  optional = true }
 tomli                    = { version = "~2.0",  optional = true }
+packaging                = { version = "21.3",  optional = true }
 
 [tool.poetry.dev-dependencies]
 black = "~22"
@@ -56,7 +58,7 @@ Faker = "~13.15"
 GitPython = "~3.1"
 
 [tool.poetry.extras]
-docs = ["sphinx", "sphinx-autodoc-typehints", "sphinx-autoapi", "furo", "m2r2", "tomli"]
+docs = ["sphinx", "sphinx-autodoc-typehints", "sphinx-autoapi", "sphinx-intl", "furo", "m2r2", "tomli", "packaging"]
 
 [tool.black]
 line-length = 120
