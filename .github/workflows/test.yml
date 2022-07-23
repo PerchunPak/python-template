@@ -11,45 +11,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  test:
+  update-lock-file:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ['3.7', '3.8', '3.9', '3.10']
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Install poetry
-      run: |
-        curl -sSL "https://install.python-poetry.org" | python
-
-        # Adding `poetry` to `$PATH`:
-        echo "$HOME/.poetry/bin" >> $GITHUB_PATH
-
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
-      with:
-        python-version: ${{ matrix.python-version }}
-        cache: 'poetry'
-
-    - name: Install dependencies
-      run: |
-        poetry env use "${{ matrix.python-version }}"
-        poetry install
-
-    - name: Run checks
-      run: make test
-
-    # Upload coverage to codecov: https://codecov.io/
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage.xml
-
-  post-test:
-    runs-on: ubuntu-latest
-    needs: 'test'
 
     steps:
     - uses: actions/checkout@v3
@@ -71,29 +34,6 @@ jobs:
       run: |
         poetry env use "3.10"
         poetry install
-
-    - name: Apply codestyle
-      run: |
-        make style
-
-        curl https://api.github.com/graphql \
-             -fs -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
-             -H "Accept: application/vnd.github.v4.idl" -X POST \
-             --data @- <<GRAPHQL
-        {
-          "query": "mutation (\$input: CreateCommitOnBranchInput!) {
-            createCommitOnBranch(input: \$input) { commit { url } } }",
-          "variables": {
-            "input": {
-              "branch": {
-                "repositoryNameWithOwner": "fire-square/fire-square-style",
-                "branchName": "${{ github.head_ref || github.ref_name }}"
-              },
-              "message": { "headline": "Apply codestyle :pencil2:" },
-              "fileChanges": `poetry run python .github/file_changes_generator.py`,
-              "expectedHeadOid": "`git rev-parse HEAD`"
-        }}}
-        GRAPHQL
 
     - name: Update poetry.lock
       run: |
