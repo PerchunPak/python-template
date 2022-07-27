@@ -41,6 +41,8 @@ jobs:
         cd '{{ cookiecutter.project_name }}'
         poetry update --lock
 
+    - name: Commit changes
+      run: |
         poetry run python .github/commit_and_push.py \
           --token ${{ secrets.GITHUB_TOKEN }} \
           PerchunPak/fire-square-style \
