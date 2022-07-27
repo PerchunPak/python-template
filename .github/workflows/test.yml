@@ -45,6 +45,6 @@ jobs:
       run: |
         poetry run python .github/commit_and_push.py \
           --token ${{ secrets.GITHUB_TOKEN }} \
-          PerchunPak/fire-square-style \
+          fire-square/fire-square-style \
           ${{ github.head_ref || github.ref_name }} \
           "Update poetry.lock :chart_with_upwards_trend:"
