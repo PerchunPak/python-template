@@ -39,7 +39,7 @@ packaging                = { version = "21.3",  optional = true }
 black = "~22"
 isort = "~5.10"
 pycln = "~2.0"
-doc8 = "~0.11"
+doc8 = "~1.0"
 pre-commit = "~2.20"
 mypy = "0.971"
 flake8 = "~4"
