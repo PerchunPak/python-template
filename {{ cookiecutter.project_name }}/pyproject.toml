@@ -38,7 +38,7 @@ packaging                = { version = "21.3",  optional = true }
 [tool.poetry.dev-dependencies]
 black = "~22"
 isort = "~5.10"
-pycln = "~2.0"
+pycln = "~2.1"
 doc8 = "~1.0"
 pre-commit = "~2.20"
 mypy = "0.971"
