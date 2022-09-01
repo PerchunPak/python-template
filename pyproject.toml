@@ -32,7 +32,7 @@ pytest = "~7.1"
 pytest-cov = "~3.0"
 pytest-mock = "~3.8"
 pytest-randomly = "~3.12"
-Faker = "~14.1"
+Faker = "~14.2"
 
 GitPython = "~3.1"
 
