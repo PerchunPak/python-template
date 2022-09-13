@@ -29,7 +29,7 @@ ORGANIZATION = "{{ cookiecutter.organization }}"
 def generate_license() -> None:
     """Generates license file for the project."""
     license_result = system(  # noqa: S605
-        "lice {0} -o {1} -p {2} > {3}/LICENSE".format(
+        'lice "{0}" -o "{1}" -p "{2}" > "{3}/LICENSE"'.format(
             LICENSE.lower(),
             ORGANIZATION,
             PROJECT_NAME,
