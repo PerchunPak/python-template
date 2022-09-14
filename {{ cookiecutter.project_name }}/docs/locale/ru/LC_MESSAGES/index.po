@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../index.rst:4 ../../index.rst:6
 msgid "Pages"
@@ -30,6 +30,10 @@ msgstr "API Документация"
 #: ../../../README.md:3
 msgid "{{ cookiecutter.project_name }}"
 msgstr "{{ cookiecutter.project_name }}"
+
+#: ../../../README.md:-1
+msgid "Support Ukraine"
+msgstr "Поддержать Украину"
 
 #: ../../../README.md:-1
 msgid "Build Status"
@@ -55,44 +59,44 @@ msgstr "Стиль Кода: black"
 msgid "Python support versions badge (from pypi)"
 msgstr "Бейдж с поддерживаемыми версиями Python (из pypi)"
 
-#: ../../../README.md:36
+#: ../../../README.md:42
 msgid "{{ cookiecutter.project_description }}"
 msgstr ""
 
 {% if cookiecutter.ukrainian_language_support == 'y' -%}
-#: ../../../README.md:39
+#: ../../../README.md:45
 msgid "`Документація українською <https://{{ cookiecutter.project_name }}.readthedocs.io/uk_UA/latest>`_"
 msgstr "`Документація українською <https://{{ cookiecutter.project_name }}.readthedocs.io/uk_UA/latest>`_"
 
-{% endif %}#: ../../../README.md:40
+{% endif %}#: ../../../README.md:46
 msgid "`Документация на русском <https://{{ cookiecutter.project_name }}.readthedocs.io/ru/latest>`_"
 msgstr "`Docs on English <https://{{ cookiecutter.project_name }}.readthedocs.io/en/latest>`_"
 
-#: ../../../README.md:43
+#: ../../../README.md:49
 msgid "Features"
 msgstr "Особенности"
 
-#: ../../../README.md:46
+#: ../../../README.md:52
 msgid "Free! We don't want any money from you!"
 msgstr "Бесплатно! Мы не попросим ни копейки за использование!"
 
-#: ../../../README.md:47
+#: ../../../README.md:53
 msgid "Add yours!"
 msgstr "Добавьте свое!"
 
-#: ../../../README.md:50
+#: ../../../README.md:56
 msgid "Installing"
 msgstr "Установка"
 
-#: ../../../README.md:57
+#: ../../../README.md:63
 msgid "Installing for local developing"
 msgstr "Установка для локального разработки"
 
-#: ../../../README.md:65
+#: ../../../README.md:71
 msgid "Installing ``poetry``"
 msgstr "Установка ``poetry``"
 
-#: ../../../README.md:67
+#: ../../../README.md:73
 msgid ""
 "Next we need install ``poetry`` with `recomended way <https://python-"
 "poetry.org/docs/master/#installation>`_."
@@ -100,33 +104,25 @@ msgstr ""
 "Затем установите ``poetry`` `рекомендованым путем <https://python-"
 "poetry.org/docs/master/#installation>`_."
 
-#: ../../../README.md:69
+#: ../../../README.md:75
 msgid "If you use Linux, use command:"
 msgstr "Если вы на платформе Linux, используйте команду:"
 
-#: ../../../README.md:75
+#: ../../../README.md:81
 msgid "If you use Windows, open PowerShell with admin privileges and use:"
 msgstr ""
 "Если вы на Windows, откройте PowerShell от имени администратора и "
 "используйте:"
 
-#: ../../../README.md:82
+#: ../../../README.md:88
 msgid "Installing dependencies"
 msgstr "Установка зависимостей"
 
-#: ../../../README.md:89
-msgid "Compiling translations"
-msgstr "Компиляция файлов перевода"
-
-#: ../../../README.md:91
-msgid "This requered even if you want just use english."
-msgstr "Это необходимо даже если вы хотите просто использовать английский."
-
-#: ../../../README.md:98
+#: ../../../README.md:101
 msgid "Configuration"
 msgstr "Конфигурация"
 
-#: ../../../README.md:100
+#: ../../../README.md:103
 msgid ""
 "All configuration happends in ``config.yml``\\ , or with enviroment "
 "variables."
@@ -134,54 +130,47 @@ msgstr ""
 "Вся настройка бота происходит в файле ``config.yml``\\ , или с помощью "
 "переменных окружения."
 
-#: ../../../README.md:103
+#: ../../../README.md:106
 msgid "If something is not clear"
 msgstr "Если что то не понятно"
 
-#: ../../../README.md:105
+#: ../../../README.md:108
 msgid "You can always write me!"
 msgstr "Вы всегда можете написать мне!"
 
-#: ../../../README.md:108
+#: ../../../README.md:111
 msgid "Example"
 msgstr "Пример"
 
-#: ../../../README.md:118
+#: ../../../README.md:121
 msgid "Updating"
 msgstr "Обновление"
 
-#: ../../../README.md:120
-msgid ""
-"For updating, just redownload repository (do not forget save config and "
-"database), if you used ``git`` for donwloading, just run ``git pull``."
-msgstr ""
-"Для обновления бота, просто скачайте заново репозиторий (предварительно "
-"сохранив конфиги и базу данных), или если выиспользовали ``git`` для "
-"установки запустите команду ``git pull``."
-
 #: ../../../README.md:123
 msgid ""
-"After that, you need update translations and database, commands the same "
-"as in installing section:"
+"For updating, just re-download repository (do not forget save config), if"
+" you used ``git`` for downloading, just run ``git pull``. After that, you"
+" need update translations, commands the same as in installing section:"
 msgstr ""
-"После чего, нужно обновить переводы и базу данных, шаги аналогичны "
-"установке бота:"
+"Для обновления бота, просто скачайте заново репозиторий (предварительно "
+"сохранив конфиги), или если вы использовали ``git`` для установки "
+"запустите команду ``git pull``. После этого, вам нужно обновить переводы,"
+" команды такие же, как и при установке:"
 
-#: ../../../README.md:131
+#: ../../../README.md:132
 msgid "Thanks"
 msgstr "Спасибо"
 
-#: ../../../README.md:133
+#: ../../../README.md:134
 msgid ""
-"This project was generated with `\\ ``fire-square-style`` "
-"<https://github.com/fire-square/fire-square-style>`_. Current template "
-"version: `{% gitcommit %} <https://github.com"
-"/fire-square/fire-square-"
-"style/tree/{% gitcommit %}>`_. See what `updated"
-" <https://github.com/fire-square/fire-square-"
+"This project was generated with `fire-square-style <https://github.com"
+"/fire-square/fire-square-style>`_. Current template version: "
+"`{% gitcommit %} <https://github.com/fire-square"
+"/fire-square-style/tree/{% gitcommit %}>`_. See "
+"what `updated <https://github.com/fire-square/fire-square-"
 "style/compare/{% gitcommit %}...master>`_."
 msgstr ""
-"Этот проект был сгенерирован с помощью `\\ fire-square-style "
+"Этот проект был сгенерирован с помощью `fire-square-style "
 "<https://github.com/fire-square/fire-square-style>`_. Текущая версия "
 "примера: `{% gitcommit %} <https://github.com"
 "/fire-square/fire-square-"
