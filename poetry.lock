@@ -437,6 +437,18 @@ importlib-metadata = {version = ">=3.6.0", markers = "python_version < \"3.10\""
 pytest = "*"
 
 [[package]]
+name = "pytest-testmon"
+version = "1.3.3"
+description = "selects tests affected by changed files and methods"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+coverage = ">=5,<7"
+pytest = ">=5,<8"
+
+[[package]]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
@@ -633,7 +645,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "e4c79039a19628fcc8598cdcb152c09697e302067efa7b8e44cbb20ad4032ec8"
+content-hash = "38a14fc995368617bd1dc19ec6f86cf34d53df6315873293d73d9c4082eaeb13"
 
 [metadata.files]
 arrow = [
@@ -880,6 +892,9 @@ pytest-mock = [
 pytest-randomly = [
     {file = "pytest-randomly-3.12.0.tar.gz", hash = "sha256:d60c2db71ac319aee0fc6c4110a7597d611a8b94a5590918bfa8583f00caccb2"},
     {file = "pytest_randomly-3.12.0-py3-none-any.whl", hash = "sha256:f4f2e803daf5d1ba036cc22bf4fe9dbbf99389ec56b00e5cba732fb5c1d07fdd"},
+]
+pytest-testmon = [
+    {file = "pytest-testmon-1.3.3.tar.gz", hash = "sha256:0ac839c089bdf99740418759a33971d3dacc695cf719acde4b967f7f88d1102c"},
 ]
 python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
