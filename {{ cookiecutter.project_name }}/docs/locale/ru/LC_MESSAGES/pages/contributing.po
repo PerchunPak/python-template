@@ -142,7 +142,7 @@ msgstr ""
 "Но если вы используете много переменных из модуля, лучше использовать "
 "``import module``\\ /\\ ``from package import module``\\ :"
 
-#: ../../../CONTRIBUTING.md:58
+#: ../../../CONTRIBUTING.md:55
 msgid ""
 "And can you use ``as``\\ ? You must not use ``as`` when alias will be the"
 " same as actual name because in that way type checker add import "
@@ -153,26 +153,26 @@ msgstr ""
 "образом инструмент проверки типов добавляет оператор импорта в "
 "автоматически сгенерированную переменную ``__all__``."
 
-#: ../../../CONTRIBUTING.md:68
+#: ../../../CONTRIBUTING.md:67
 msgid ""
 "You maybe notice that ``import module`` and ``from package import "
 "module`` are written with ``/``\\ , this is because you must use first "
-"one, if no package exist. But if there is a package - you must use "
-"``from package import module``. Look at these examples:"
+"one, if no package exist. But if there is a package - you must use ``from"
+" package import module``. Look at these examples:"
 msgstr ""
 "Возможно, вы заметили, что ``import module`` и ``from package import "
 "module`` написаны с ``/``\\ , это потому, что вы должны использовать "
-"первый способ, если нет пакета (package). Но если пакет существует "
-"- вы должны использовать ``from package import module``. Посмотрите на "
-"эти примеры:"
+"первый способ, если нет пакета (package). Но если пакет существует - вы "
+"должны использовать ``from package import module``. Посмотрите на эти "
+"примеры:"
 
-#: ../../../CONTRIBUTING.md:78
+#: ../../../CONTRIBUTING.md:77
 msgid "Notice that there aren't any relative imports, you can't use it here."
 msgstr ""
 "Обратите внимание, что здесь нет относительных импортов, вы не можете "
 "использовать его у нас."
 
-#: ../../../CONTRIBUTING.md:80
+#: ../../../CONTRIBUTING.md:79
 msgid ""
 "Also, you must specify ``__all__`` variable in all ``__init__.py`` files "
 "with any code (not one docstring). Reason of this limitation is that "
@@ -189,11 +189,11 @@ msgstr ""
 "проигнорирует эти импорты, а документы будут дублировать документацию для"
 " всего, что вы будете импортировать."
 
-#: ../../../CONTRIBUTING.md:86
+#: ../../../CONTRIBUTING.md:85
 msgid "Docstrings"
 msgstr "Док-строки"
 
-#: ../../../CONTRIBUTING.md:88
+#: ../../../CONTRIBUTING.md:87
 msgid ""
 "We're using ``flake8`` for checking docstrings presence and their "
 "quality. They later in API documentation. You must write docstrings "
@@ -205,7 +205,7 @@ msgstr ""
 " кроме методов ``__init__`` (не то же самое, что файлы ``__init__.py``), "
 "потому что они не попадут в документацию."
 
-#: ../../../CONTRIBUTING.md:92
+#: ../../../CONTRIBUTING.md:91
 msgid ""
 "I also recommend reading `Google styleguide about docstrings "
 "<https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-"
@@ -215,11 +215,11 @@ msgstr ""
 "<https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-"
 "docstrings>`_, потому что мы используем стиль Google в док-строках."
 
-#: ../../../CONTRIBUTING.md:96
+#: ../../../CONTRIBUTING.md:95
 msgid "Markup"
 msgstr "Разметка"
 
-#: ../../../CONTRIBUTING.md:98
+#: ../../../CONTRIBUTING.md:97
 msgid ""
 "Because of Sphinx's limitations, we must use ReST markup in docstrings. "
 "This allows us to use cross-references to other functions or even "
@@ -229,7 +229,7 @@ msgstr ""
 "док-строках. Это позволяет нам использовать перекрестные ссылки на другие"
 " функции или даже проекты."
 
-#: ../../../CONTRIBUTING.md:101
+#: ../../../CONTRIBUTING.md:100
 msgid ""
 "Read more about `ReST markup <https://www.sphinx-"
 "doc.org/en/master/usage/restructuredtext/basics.html>`_ and `Sphinx's "
@@ -241,21 +241,21 @@ msgstr ""
 "ссылках Sphinx <https://docs.readthedocs.io/en/stable/guides/cross-"
 "referencing-with-sphinx.html>`_."
 
-#: ../../../CONTRIBUTING.md:105
+#: ../../../CONTRIBUTING.md:104
 msgid "``__init__.py`` docstrings"
 msgstr "Док-строки в ``__init__.py``"
 
-#: ../../../CONTRIBUTING.md:107
+#: ../../../CONTRIBUTING.md:106
 msgid "They describe a package (folder) with modules (\\ ``.py`` files)."
 msgstr ""
 "Они описывают пакет (папку, package) с модулями (\\ ``.py`` файлы, "
 "modules)."
 
-#: ../../../CONTRIBUTING.md:110
+#: ../../../CONTRIBUTING.md:109
 msgid "Module, function, class, method based docstrings"
 msgstr "Док-строки в модулях, функциях, классах и методах"
 
-#: ../../../CONTRIBUTING.md:112
+#: ../../../CONTRIBUTING.md:111
 msgid ""
 "It is a short description of an item. They must follow `Google styleguide"
 " about docstrings <https://google.github.io/styleguide/pyguide.html#s3.8"
@@ -266,15 +266,15 @@ msgstr ""
 "<https://google.github.io/styleguide/pyguide.html#s3.8-comments-and-"
 "docstrings>`_."
 
-#: ../../../CONTRIBUTING.md:116
+#: ../../../CONTRIBUTING.md:115
 msgid "Variable-based docstrings"
 msgstr "Док-строки в переменных"
 
-#: ../../../CONTRIBUTING.md:118
+#: ../../../CONTRIBUTING.md:117
 msgid "They must follow in format:"
 msgstr "Они должны идти в формате:"
 
-#: ../../../CONTRIBUTING.md:125
+#: ../../../CONTRIBUTING.md:124
 msgid ""
 "This applies for the module level, and class attributes in `dataclasses "
 "<https://docs.python.org/3/library/dataclasses.html>`_\\ /classes "
@@ -290,7 +290,7 @@ msgstr ""
 "документацию. Атрибуты должны быть задокументированы в док-строках на "
 "основе класса, в секции ``Attributes``."
 
-#: ../../../CONTRIBUTING.md:130
+#: ../../../CONTRIBUTING.md:129
 msgid ""
 "At now, linter doesn't detect them. Better sometimes check that all in "
 "API documentation actually documented."
@@ -298,11 +298,11 @@ msgstr ""
 "В настоящее время линтер не обнаруживает их. Лучше иногда проверять, что "
 "все в документации API действительно задокументировано."
 
-#: ../../../CONTRIBUTING.md:133
+#: ../../../CONTRIBUTING.md:132
 msgid "``pyproject.toml``"
 msgstr "``pyproject.toml``"
 
-#: ../../../CONTRIBUTING.md:135
+#: ../../../CONTRIBUTING.md:134
 msgid ""
 "In this file, we configure **only** ``poetry`` (except for ``black``\\ , "
 "it supports only ``pyproject.toml`` file for configuration)."
@@ -311,11 +311,11 @@ msgstr ""
 "``black``\\ , который поддерживает только файл ``pyproject.toml`` для "
 "настройки)."
 
-#: ../../../CONTRIBUTING.md:139
+#: ../../../CONTRIBUTING.md:138
 msgid "Groups"
 msgstr "Группы"
 
-#: ../../../CONTRIBUTING.md:141
+#: ../../../CONTRIBUTING.md:140
 msgid ""
 "Since ``poetry`` 1.2 a new feature appeared - groups. It allows "
 "downloading only those groups of packages, which you will need. We have "
@@ -327,23 +327,23 @@ msgstr ""
 " нас есть четыре группы - ``make``\\ , ``tests``\\ , ``docs`` и "
 "``github_hooks``. Каждая из них рассказывает про свою функцию названием."
 
-#: ../../../CONTRIBUTING.md:146
+#: ../../../CONTRIBUTING.md:145
 msgid "``make``\\ : All required dependencies for `make test <#make-test>`_."
 msgstr "``make``\\ : Все необходимые зависимости для `make test <#make-test>`_."
 
-#: ../../../CONTRIBUTING.md:147
+#: ../../../CONTRIBUTING.md:146
 msgid "``tests``\\ : All required dependencies for tests."
 msgstr "``tests``\\ : Все необходимые зависимости для тестов."
 
-#: ../../../CONTRIBUTING.md:148
+#: ../../../CONTRIBUTING.md:147
 msgid "``docs``\\ : All required dependencies for building documentation."
 msgstr "``docs``\\ : Все необходимые зависимости для постройки документации."
 
-#: ../../../CONTRIBUTING.md:149
+#: ../../../CONTRIBUTING.md:148
 msgid "``github_hooks``\\ : All required dependencies for GitHub hooks."
 msgstr "``github_hooks``\\ : Все необходимые зависимости для GitHub hooks."
 
-#: ../../../CONTRIBUTING.md:151
+#: ../../../CONTRIBUTING.md:150
 msgid ""
 "Please see `Managing dependencies in poetry <https://python-"
 "poetry.org/docs/master/managing-dependencies/>`_."
@@ -351,11 +351,11 @@ msgstr ""
 "Пожалуйста, смотрите `Управление зависимостями в poetry <https://python-"
 "poetry.org/docs/master/managing-dependencies/>`_."
 
-#: ../../../CONTRIBUTING.md:154
+#: ../../../CONTRIBUTING.md:153
 msgid "Versions"
 msgstr "Версии"
 
-#: ../../../CONTRIBUTING.md:156
+#: ../../../CONTRIBUTING.md:155
 msgid ""
 "All versions must follow in format ``X.Y.z`` (absolute version) or (\\ "
 "``~X.Y``\\ ). Last one will compile in ``>=X.Y.0,<X.Y+1.0``. So for "
@@ -373,7 +373,7 @@ msgstr ""
 "любая версия патча для ``1.2``, но не ``1.3``\\ +). Если ``1.3.0`` будет "
 "выпущен - dependabot создаст PR для него."
 
-#: ../../../CONTRIBUTING.md:161
+#: ../../../CONTRIBUTING.md:160
 msgid ""
 "Read more `about Semantic Versions <https://semver.org/>`_ and "
 "`Dependency specification in poetry <https://python-"
@@ -384,17 +384,17 @@ msgstr ""
 "specification/>`_."
 
 {% if cookiecutter.other_languages_support == 'y' -%}
-#: ../../../CONTRIBUTING.md:164
+#: ../../../CONTRIBUTING.md:163
 msgid "Translations"
 msgstr "Переводы"
 
-#: ../../../CONTRIBUTING.md:166
+#: ../../../CONTRIBUTING.md:165
 msgid "If you don't know languages which we support - left translation on us."
 msgstr ""
 "Если вы не знаете языков, которые мы поддерживаем - предоставьте перевод "
 "нам."
 
-#: ../../../CONTRIBUTING.md:168
+#: ../../../CONTRIBUTING.md:167
 msgid ""
 "To update ``.po`` files run ``make translate``\\ , after that, you can "
 "edit translations in ``.po`` files, which can be found as "
@@ -410,7 +410,7 @@ msgstr ""
 "компиляции можете еще раз запустить ``make translate`` (или ``make html``"
 " в документации)."
 
-#: ../../../CONTRIBUTING.md:172
+#: ../../../CONTRIBUTING.md:171
 msgid ""
 "To add new language, use ``pybabel init -i locales/base.pot -l "
 "<language's tag> -d locales`` or ``sphinx-intl update -l <language's "
@@ -420,7 +420,7 @@ msgstr ""
 "locales/base.pot -l <тэг языка> -d locales`` или ``sphinx-intl update -l "
 "<тэг языка>`` для документации."
 
-#: ../../../CONTRIBUTING.md:175
+#: ../../../CONTRIBUTING.md:174
 msgid ""
 "P.S. Language's tag it is short name of this language, example ``en`` or "
 "``en_EN``. A full list of supported languages can be found with ``pybabel"
@@ -429,11 +429,11 @@ msgstr ""
 "P.S. Тэг языка это короткое его название, например ``en`` или ``en_EN``. "
 "Полный список вы можете посмотреть запустив ``pybabel --list-locales``."
 {% endif %}
-#: ../../../CONTRIBUTING.md:179
+#: ../../../CONTRIBUTING.md:178
 msgid "Documentation"
 msgstr "Документация"
 
-#: ../../../CONTRIBUTING.md:181
+#: ../../../CONTRIBUTING.md:180
 msgid ""
 "We use Sphinx for documentation and `docstrings <#docstrings>`_ for API "
 "documentation. At now, there is no actual styles here, except ``doc8``."
@@ -442,11 +442,11 @@ msgstr ""
 "документации API. На данный момент здесь нет никаких актуальных стилей, "
 "кроме ``doc8``."
 
-#: ../../../CONTRIBUTING.md:185
+#: ../../../CONTRIBUTING.md:184
 msgid "Other Help"
 msgstr "Другая Помощь"
 
-#: ../../../CONTRIBUTING.md:187
+#: ../../../CONTRIBUTING.md:186
 msgid ""
 "You can contribute by spreading a word about this library. It would also "
 "be a huge contribution to write a short article on how you are using this"
