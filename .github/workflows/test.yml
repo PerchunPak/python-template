@@ -33,7 +33,7 @@ jobs:
     - name: Install dependencies
       run: |
         poetry env use "3.10"
-        poetry install
+        poetry install --only github_hooks
 
     - name: Update poetry.lock
       run: |
