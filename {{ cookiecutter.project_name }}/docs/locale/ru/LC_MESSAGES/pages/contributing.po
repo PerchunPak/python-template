@@ -1,15 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, fire-square
-# This file is distributed under the same license as the my-pretty-project
-# package.
+# Copyright (C) {% now 'utc', '%Y' %}, {{ cookiecutter.organization }}
+# This file is distributed under the same license as the {{ cookiecutter.project_name }} package.
 # Perchun Pak <perchunpak@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: my-pretty-project 0.1.0\n"
+"Project-Id-Version: {{ cookiecutter.project_name }} 0.1.0\n"
 "Report-Msgid-Bugs-To: GitHub Bug Tracker\n"
-"POT-Creation-Date: 2022-09-14 09:39+0200\n"
-"PO-Revision-Date: 2022-09-14 08:19+0200\n"
+"POT-Creation-Date: {% now 'local', '%Y-%m-%d %H:%M%z' %}\n"
+"PO-Revision-Date: {% now 'local', '%Y-%m-%d %H:%M%z' %}\n"
 "Last-Translator: Perchun Pak <perchunpak@gmail.com>\n"
 "Language: ru\n"
 "Language-Team: \n"
