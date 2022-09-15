@@ -23,8 +23,6 @@ structlog = "22.1.0"
 ### Only needed for Windows ###
 colorama = { version = "*", markers="platform_system == 'Windows'" }
 
-# Docs
-
 
 [tool.poetry.group.make.dependencies]
 black = "~22"
