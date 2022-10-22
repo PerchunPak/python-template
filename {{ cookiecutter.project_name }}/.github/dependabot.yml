@@ -5,9 +5,10 @@ updates:
   schedule:
     interval: daily
     time: "00:00"
-  ignore:
+  allow:
     - dependency-name: "*"
-      update-types: [ "version-update:semver-patch" ]
+      update-types: [ "version-update:semver-major", "version-update:semver-minor" ]
+  ignore:
     # Update these dependencies with CI (poetry update)
     - dependency-name: "colorama"
     # Update these dependencies with fire-square-style

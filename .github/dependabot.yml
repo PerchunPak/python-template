@@ -14,10 +14,13 @@ updates:
   schedule:
     interval: daily
     time: "00:00"
-  ignore:
+  allow:
     - dependency-name: "*"
-      update-types: [ "version-update:semver-patch" ]
-
+      update-types: [ "version-update:semver-major", "version-update:semver-minor" ]
+    # update dependencies that don't follow semver
+    - dependency-name: "structlog"
+    - dependency-name: "mypy"
+  ignore:
     - dependency-name: "flake8"
       update-types: [ "version-update:semver-minor" ]
     - dependency-name: "flake8-docstrings"
@@ -27,15 +30,6 @@ updates:
 
     - dependency-name: "pydocstyle"
     - dependency-name: "colorama"
-# update dependencies that don't follow semver
-- package-ecosystem: pip
-  directory: "/{{ cookiecutter.project_name }}"
-  schedule:
-    interval: daily
-    time: "00:00"
-  allow:
-    - dependency-name: "structlog"
-    - dependency-name: "mypy"
 
 - package-ecosystem: github-actions
   directory: "/"
