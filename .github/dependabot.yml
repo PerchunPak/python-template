@@ -27,6 +27,15 @@ updates:
 
     - dependency-name: "pydocstyle"
     - dependency-name: "colorama"
+# update dependencies that don't follow semver
+- package-ecosystem: pip
+  directory: "/{{ cookiecutter.project_name }}"
+  schedule:
+    interval: daily
+    time: "00:00"
+  allow:
+    - dependency-name: "structlog"
+    - dependency-name: "mypy"
 
 - package-ecosystem: github-actions
   directory: "/"
