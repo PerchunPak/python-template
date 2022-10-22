@@ -14,13 +14,10 @@ updates:
   schedule:
     interval: daily
     time: "00:00"
-  allow:
-    - dependency-name: "*"
-      update-types: [ "version-update:semver-major", "version-update:semver-minor" ]
-    # update dependencies that don't follow semver
-    - dependency-name: "structlog"
-    - dependency-name: "mypy"
   ignore:
+    - dependency-name: "*"
+      update-types: [ "version-update:semver-patch" ]
+
     - dependency-name: "flake8"
       update-types: [ "version-update:semver-minor" ]
     - dependency-name: "flake8-docstrings"
