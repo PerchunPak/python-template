@@ -19,7 +19,10 @@ from typing import Dict, List, Optional
 from autoapi.mappers.python.objects import PythonModule
 from packaging.version import parse as parse_version
 from sphinx.application import Sphinx
-from tomli import load as toml_parse
+try:
+    from tomllib import load as toml_parse
+except ModuleNotFoundError:  # python <3.11
+    from tomli import load as toml_parse
 
 sys.path.insert(0, os.path.abspath(".."))
 
