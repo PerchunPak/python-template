@@ -156,6 +156,8 @@ html_static_path = ["_static"]
 # -- Extension configuration -------------------------------------------------
 
 napoleon_include_private_with_doc = True
+napoleon_use_admonition_for_examples = True
+napoleon_use_admonition_for_references = True
 
 # Configuration for autoapi
 autoapi_dirs = ["../{{cookiecutter.project_name.lower().replace('-', '_')}}"]
