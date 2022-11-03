@@ -5,7 +5,7 @@
 [![Build Status](https://github.com/fire-square/fire-square-style/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/fire-square/fire-square-style/actions?query=workflow%3Atest)
 [![codecov](https://codecov.io/gh/fire-square/fire-square-style/branch/master/graph/badge.svg)](https://codecov.io/gh/fire-square/fire-square-style)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Python 3.10 badge](https://img.shields.io/badge/python-3.10-blue)](https://www.python.org/downloads/)
+[![Python 3.11 badge](https://img.shields.io/badge/python-3.11-blue)](https://www.python.org/downloads/)
 
 Code template for all projects [firesquare](https://github.com/fire-square) organization.
 Template can be used anywhere, this includes non-[firesquare](https://github.com/fire-square) projects.
