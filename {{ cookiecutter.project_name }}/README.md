@@ -37,7 +37,7 @@ cd {{ cookiecutter.project_name }}
 
 ### Installing `poetry`
 
-Next we need install `poetry` with [recomended way](https://python-poetry.org/docs/master/#installation).
+Next we need install `poetry` with [recommended way](https://python-poetry.org/docs/master/#installation).
 
 If you use Linux, use command:
 
@@ -57,7 +57,7 @@ If you use Windows, open PowerShell with admin privileges and use:
 poetry install --no-dev
 ```{% if cookiecutter.other_languages_support == 'y' -%}
 
-### Compiling translations
+#### Compiling translations
 
 This requered even if you want just use english.
 
@@ -67,7 +67,7 @@ poetry run pybabel compile -d locales
 
 ### Configuration
 
-All configuration happends in `config.yml`, or with enviroment variables.
+All configuration happens in `config.yml`, or with enviroment variables.
 
 ### If something is not clear
 
@@ -83,6 +83,12 @@ print(some_function(3, 4))
 ```
 
 ## Updating
+
+```bash
+pip install -U {{ cookiecutter.project_name }}
+```
+
+### For local development
 
 For updating, just re-download repository (do not forget save config),
 if you used `git` for downloading, just run `git pull`.
