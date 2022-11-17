@@ -4,13 +4,13 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry]
-name = "fire-square-style"
-description = "Пример стиля кода для всех Python проектов организации Fire square."
+name = "python-template"
+description = "My own template for any Python project."
 version = "0.1.0"
 license = "MIT"
-authors = ["fire-square <team@firesquare.ru>"]
+authors = ["PerchunPak <python-template.author@perchun.it>"]
 readme = "README.md"
-repository = "https://github.com/fire-square/fire-square-style"
+repository = "https://github.com/PerchunPak/python-template"
 
 
 [tool.poetry.dependencies]

@@ -23,7 +23,7 @@ body:
     id: commit_template
     attributes:
       label: Template's commit
-      placeholder: cd fire-square-style; git rev-parse HEAD
+      placeholder: cd python-template; git rev-parse HEAD
     validations:
       required: true
   - type: input

@@ -101,6 +101,6 @@ poetry run pybabel compile -d locales
 {% endif %}
 ## Thanks
 
-This project was generated with [fire-square-style](https://github.com/fire-square/fire-square-style).
-Current template version: [{% gitcommit %}](https://github.com/fire-square/fire-square-style/tree/{% gitcommit %}).
-See what [updated](https://github.com/fire-square/fire-square-style/compare/{% gitcommit %}...master).
+This project was generated with [python-template](https://github.com/PerchunPak/python-template).
+Current template version: [{% gitcommit %}](https://github.com/PerchunPak/python-template/tree/{% gitcommit %}).
+See what [updated](https://github.com/PerchunPak/python-template/compare/{% gitcommit %}...master).
