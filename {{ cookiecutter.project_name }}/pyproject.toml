@@ -32,6 +32,7 @@ doc8 = "~1.0"
 mypy = "*"  # dependabot can't update non semver dependencies with our config, see e9376da in python-template
 flake8 = "~5"
 flake8-docstrings = "~1"
+flake8-ensure-ascii = "^1.0.0"
 pydocstyle = ">=4.0.0"
 safety = "~2.3"
 
