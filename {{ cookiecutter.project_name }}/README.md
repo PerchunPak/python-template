@@ -62,7 +62,7 @@ poetry install --no-dev
 This requered even if you want just use english.
 
 ```bash
-poetry run pybabel compile -d locales
+pybabel compile -d locales
 ```{% endif %}
 
 ### Configuration
@@ -96,7 +96,7 @@ if you used `git` for downloading, just run `git pull`.
 After that, you need update translations, commands the same as in installing section:
 
 ```bash
-poetry run pybabel compile -d locales
+pybabel compile -d locales
 ```
 {% endif %}
 ## Thanks
