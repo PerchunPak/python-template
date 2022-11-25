@@ -18,7 +18,7 @@ python = "^3.8,<=3.11"
 
 # Our dependecies
 omegaconf = "~2.2"
-structlog = "22.2.0"
+structlog = "22.3.0"
 ### For colors in structlog ###
 ### Only needed for Windows ###
 colorama = { version = "*", markers="platform_system == 'Windows'" }
