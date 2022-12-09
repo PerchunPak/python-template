@@ -17,7 +17,7 @@ repository = "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter
 python = "^3.8,<=3.11"
 
 # Our dependecies
-omegaconf = "~2.2"
+omegaconf = "~2.3"
 structlog = "22.3.0"
 ### For colors in structlog ###
 ### Only needed for Windows ###
