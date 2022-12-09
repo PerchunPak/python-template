@@ -11,7 +11,7 @@ updates:
     # Update these dependencies with CI (poetry update)
     - dependency-name: "colorama"
     # Update these dependencies with python-template
-    - dependency-name: "python-decouple"
+    - dependency-name: "omegaconf"
     - dependency-name: "structlog"
     ### Docs section ###
     - dependency-name: "sphinx"
