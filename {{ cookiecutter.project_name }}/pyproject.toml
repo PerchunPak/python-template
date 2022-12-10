@@ -14,7 +14,7 @@ repository = "https://github.com/{{ cookiecutter.organization }}/{{ cookiecutter
 
 
 [tool.poetry.dependencies]
-python = "^3.8,<=3.11"
+python = "^3.8,<3.12"
 
 # Our dependecies
 omegaconf = "~2.3"

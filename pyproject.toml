@@ -14,7 +14,7 @@ repository = "https://github.com/PerchunPak/python-template"
 
 
 [tool.poetry.dependencies]
-python = "^3.7,<=3.11"
+python = "^3.7,<3.12"
 
 cookiecutter = "~2.1"
 jinja2-git = "~1.3"
