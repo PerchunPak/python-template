@@ -6,9 +6,6 @@
   "ukrainian_language_support": "y",
   "russian_language_support": "y",
   "license": "AGPL3",
-  "_extensions": [
-    "jinja2_git.GitExtension"
-  ],
   "_copy_without_render": [
     ".venv",
     "docs/_build",

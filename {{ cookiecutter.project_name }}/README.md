@@ -102,5 +102,3 @@ pybabel compile -d locales
 ## Thanks
 
 This project was generated with [python-template](https://github.com/PerchunPak/python-template).
-Current template version: [{% gitcommit %}](https://github.com/PerchunPak/python-template/tree/{% gitcommit %}).
-See what [updated](https://github.com/PerchunPak/python-template/compare/{% gitcommit %}...master).
