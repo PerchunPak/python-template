@@ -54,7 +54,7 @@ cookiecutter .
 
 ### If something is not clear
 
-You can always write us!
+You can always write me!
 
 ## Updating
 
