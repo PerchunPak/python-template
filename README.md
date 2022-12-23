@@ -13,8 +13,8 @@ Template can be used anywhere, this includes non-my projects.
 ## Installing
 
 ```bash
-pip install cookiecutter jinja2-git lice
-cookiecutter gh:PerchunPak/python-template
+pip install cruft jinja2-git lice
+cruft create https://github.com/PerchunPak/python-template
 ```
 
 ### If this doesn't work, try this:
@@ -49,7 +49,7 @@ poetry install --no-dev
 ### Run template
 
 ```bash
-cookiecutter .
+cruft create .
 ```
 
 ### If something is not clear
@@ -58,7 +58,9 @@ You can always write me!
 
 ## Updating
 
-For updating, see `See what updated` diff in generated README.md file, in the end of it.
+```bash
+cruft update
+```
 
 ## Projects using it
 
