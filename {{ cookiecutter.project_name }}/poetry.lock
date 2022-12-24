@@ -758,6 +758,17 @@ typing-inspect = ">=0.4.0"
 dev = ["Sphinx (>=5.1.1)", "black (==22.10.0)", "coverage (>=4.5.4)", "fixit (==0.1.1)", "flake8 (>=3.7.8,<5)", "hypothesis (>=4.36.0)", "hypothesmith (>=0.0.4)", "jinja2 (==3.1.2)", "jupyter (>=1.0.0)", "maturin (>=0.8.3,<0.14)", "nbsphinx (>=0.4.2)", "prompt-toolkit (>=2.0.9)", "pyre-check (==0.9.9)", "setuptools-rust (>=1.5.2)", "setuptools-scm (>=6.0.1)", "slotscheck (>=0.7.1)", "sphinx-rtd-theme (>=0.4.3)", "ufmt (==2.0.1)", "usort (==1.0.5)"]
 
 [[package]]
+name = "lice"
+version = "0.6"
+description = "Generate a license file for a project"
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "lice-0.6.tar.gz", hash = "sha256:2d953660f74989ea5a087fd358daed262bb23e524feadd7e7376b6b872f47e6a"},
+]
+
+[[package]]
 name = "m2r2"
 version = "0.3.3"
 description = "Markdown and reStructuredText in a single file."
@@ -1967,4 +1978,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<3.12"
-content-hash = "8da11ad1d31187183a84d3360a49f59611ffd4a2fab4d03b8203ad4fadc11774"
+content-hash = "b94246ccd4a35cbd3c9e6d786597f3011e731ed24dab0f7279611a11a1926433"
