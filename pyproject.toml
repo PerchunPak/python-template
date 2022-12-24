@@ -16,7 +16,8 @@ repository = "https://github.com/PerchunPak/python-template"
 [tool.poetry.dependencies]
 python = "^3.7,<3.12"
 
-cruft = { version = "~2.11", extras = ["pyproject"] }
+# workaround before https://github.com/cruft/cruft/pull/197 will be merged
+cruft = { git = "https://github.com/OverkillGuy/cruft", branch = "fix-extension-context" }
 lice = "~0.6"
 
 

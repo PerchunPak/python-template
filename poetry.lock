@@ -218,27 +218,30 @@ toml = ["tomli"]
 
 [[package]]
 name = "cruft"
-version = "2.11.1"
+version = "0.0.0"
 description = "Allows you to maintain all the necessary cruft for packaging and building projects separate from the code you intentionally write. Built on-top of CookieCutter."
 category = "main"
 optional = false
-python-versions = ">=3.7,<4.0"
-files = [
-    {file = "cruft-2.11.1-py3-none-any.whl", hash = "sha256:36026426d1d602656fe894e027dcd502ccf48da4b30927e071928e35465c2676"},
-    {file = "cruft-2.11.1.tar.gz", hash = "sha256:deae3ee097f091462d7c872df22d6ad0ac89ce870bd1665e716e0d08fd21357b"},
-]
+python-versions = "^3.7"
+files = []
+develop = false
 
 [package.dependencies]
-click = ">=7.1.2,<9.0.0"
+click = ">= 7.1.2, <9.0.0"
 cookiecutter = ">=1.7"
-gitpython = ">=3.0,<4.0"
+gitpython = "^3.0"
 importlib-metadata = {version = ">=1.7.0", markers = "python_version < \"3.8\""}
-toml = {version = ">=0.10,<0.11", optional = true, markers = "extra == \"pyproject\""}
-typer = ">=0.4.0,<0.7"
+typer = ">=0.4.0, <0.7"
 
 [package.extras]
 examples = ["examples (>=1.0.2,<2.0.0)"]
 pyproject = ["toml (>=0.10,<0.11)"]
+
+[package.source]
+type = "git"
+url = "https://github.com/OverkillGuy/cruft"
+reference = "fix-extension-context"
+resolved_reference = "4628fb068b038e17be039901a7f33f94f7787b0f"
 
 [[package]]
 name = "distlib"
@@ -839,7 +842,6 @@ files = [
     {file = "ruamel.yaml.clib-0.2.7-cp310-cp310-win_amd64.whl", hash = "sha256:d000f258cf42fec2b1bbf2863c61d7b8918d31ffee905da62dede869254d3b8a"},
     {file = "ruamel.yaml.clib-0.2.7-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:045e0626baf1c52e5527bd5db361bc83180faaba2ff586e763d3d5982a876a9e"},
     {file = "ruamel.yaml.clib-0.2.7-cp311-cp311-macosx_12_6_arm64.whl", hash = "sha256:721bc4ba4525f53f6a611ec0967bdcee61b31df5a56801281027a3a6d1c2daf5"},
-    {file = "ruamel.yaml.clib-0.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl", hash = "sha256:41d0f1fa4c6830176eef5b276af04c89320ea616655d01327d5ce65e50575c94"},
     {file = "ruamel.yaml.clib-0.2.7-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:4b3a93bb9bc662fc1f99c5c3ea8e623d8b23ad22f861eb6fce9377ac07ad6072"},
     {file = "ruamel.yaml.clib-0.2.7-cp36-cp36m-macosx_12_0_arm64.whl", hash = "sha256:a234a20ae07e8469da311e182e70ef6b199d0fbeb6c6cc2901204dd87fb867e8"},
     {file = "ruamel.yaml.clib-0.2.7-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:15910ef4f3e537eea7fe45f8a5d19997479940d9196f357152a09031c5be59f3"},
@@ -948,7 +950,7 @@ files = [
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 files = [
@@ -1059,4 +1061,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7,<3.12"
-content-hash = "ff9a9682a1935f9a944146f7e2e3abc0df419e33e8e91da6e7f24ce05f2ecf8a"
+content-hash = "55571b925986655f3478f3846bd0c841492216bd46f9b7d311bc4ba86013c861"
