@@ -10,6 +10,13 @@ that we propose here. However, we will prefer these recommendations when we will
 
 All contributions, all code, all comments, all commits and everything else **must** be in English. 
 
+## Commit naming style
+
+Every commit must have **one** small change. We also use the [Tim Pope commit message template](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+for commits' messages.
+
+If you worry about clean `git log` - just don't. We use squash strategy for merging PRs.
+
 ## `make test`
 
 This "magic" command collects almost all of our CI. If you're on Windows, try [Chocolatey](https://chocolatey.org) to
