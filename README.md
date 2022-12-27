@@ -1,6 +1,6 @@
 # python-template
 
-[![Support Ukraine](https://badgen.net/badge/support/UKRAINE/?color=0057B8&labelColor=FFD700)](https://www.gov.uk/government/news/ukraine-what-you-can-do-to-help)
+[![Support Ukraine](https://badgen.net/badge/support/UKRAINE/?color=0057B8&labelColor=FFD700)](https://savelife.in.ua/en/)
 
 [![Build Status](https://github.com/PerchunPak/python-template/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/PerchunPak/python-template/actions?query=workflow%3Atest)
 [![codecov](https://codecov.io/gh/PerchunPak/python-template/branch/master/graph/badge.svg)](https://codecov.io/gh/PerchunPak/python-template)
