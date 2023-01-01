@@ -13,12 +13,9 @@ Template can be used anywhere, this includes non-my projects.
 ## Installing
 
 ```bash
-pip install git+https://github.com/OverkillGuy/cruft.git@fix-extension-context jinja2-git lice
+pip install cruft lice
 cruft create https://github.com/PerchunPak/python-template
 ```
-
-This strange installing for `cruft` is a workaround, before [this](https://github.com/cruft/cruft/pull/197) will be
-merged.
 
 ### If this doesn't work, try this:
 
