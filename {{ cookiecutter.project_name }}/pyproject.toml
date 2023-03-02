@@ -26,7 +26,7 @@ colorama = { version = "*", markers="platform_system == 'Windows'" }
 
 [tool.poetry.group.make.dependencies]
 black = "~22"
-isort = "~5.10"
+isort = "~5.12"
 pycln = "~2.1"
 doc8 = "~1.0"
 mypy = "*"  # dependabot can't update non semver dependencies with our config, see e9376da in python-template
