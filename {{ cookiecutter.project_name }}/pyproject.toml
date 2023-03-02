@@ -25,7 +25,7 @@ colorama = { version = "*", markers="platform_system == 'Windows'" }
 
 
 [tool.poetry.group.make.dependencies]
-black = "~22"
+black = "~23"
 isort = "~5.12"
 pycln = "~2.1"
 doc8 = "~1.0"
