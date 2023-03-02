@@ -38,7 +38,7 @@ safety = "~2.3"
 cruft = "~2.12"
 lice = "~0.6"  # for generating template
 
-pre-commit = "~2.20"
+pre-commit = "~3.1"
 
 
 [tool.poetry.group.tests.dependencies]
