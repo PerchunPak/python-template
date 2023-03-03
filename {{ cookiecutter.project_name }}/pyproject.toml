@@ -54,7 +54,7 @@ Faker = "~17.5"
 sphinx = "~6.1"
 sphinx-autodoc-typehints = "~1.22"
 sphinx-autoapi = "~2.0"
-sphinx-intl = "~2.0"  # only for locales
+sphinx-intl = "~2.1"  # only for locales
 furo = "*"
 m2r2 = "~0.3"
 tomli = { version = "~2.0", markers = "python_version < '3.11'" }
