@@ -47,7 +47,7 @@ pytest-cov = "~4.0"
 pytest-mock = "~3.10"
 pytest-testmon = "~1.4"
 pytest-randomly = "~3.12"
-Faker = "~15.3"
+Faker = "~17.5"
 
 
 [tool.poetry.group.docs.dependencies]
