@@ -1301,14 +1301,14 @@ pytest = "*"
 
 [[package]]
 name = "pytest-testmon"
-version = "1.4.5"
+version = "2.0.0"
 description = "selects tests affected by changed files and methods"
 category = "dev"
 optional = false
-python-versions = "<3.12,>=3.7"
+python-versions = ">=3.7"
 files = [
-    {file = "pytest-testmon-1.4.5.tar.gz", hash = "sha256:6fbbc63fb2d56b64d70197cae2ecbcf8074f81a1a174944a829b29f24ca2603d"},
-    {file = "pytest_testmon-1.4.5-py3-none-any.whl", hash = "sha256:313424d868c0924596f710d49506c554dce78be85b96553a433141626e870ef1"},
+    {file = "pytest-testmon-2.0.0.tar.gz", hash = "sha256:e8157b24c60482d16f42316f2ed722bd34bc158c205da7f107f25dde6ced9fe7"},
+    {file = "pytest_testmon-2.0.0-py3-none-any.whl", hash = "sha256:965d73b822b4443765be4ee83ca2238dbcefbe7e8808f60ab28445232271673b"},
 ]
 
 [package.dependencies]
@@ -2098,4 +2098,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<3.12"
-content-hash = "fe30bf67544374d28bd33f7ba93cfe3213241415a4f25e06fc446ca3d4faac4c"
+content-hash = "6215b7d0f58a31d5cf8a8dfee7e6c7a6ea5909541a72d2eefab51e9dab4a77b2"
