@@ -27,6 +27,7 @@ updates:
 
     - dependency-name: "pydocstyle"
     - dependency-name: "colorama"
+    - dependency-name: "furo"
 
 - package-ecosystem: github-actions
   directory: "/"
