@@ -17,23 +17,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Install poetry
-      run: |
-        curl -sSL "https://install.python-poetry.org" | python
-
-        # Adding `poetry` to `$PATH`:
-        echo "$HOME/.poetry/bin" >> $GITHUB_PATH
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
+    - name: Setup poetry
+      id: poetry_setup
+      uses: ItsDrike/setup-poetry@v1
       with:
-        python-version: '3.11'
-        cache: 'poetry'
-
-    - name: Install dependencies
-      run: |
-        poetry env use "3.11"
-        poetry install --only github_hooks
+          python-version: 3.11
+          install-args: --only github_hooks --sync
 
     - name: Update poetry.lock
       run: |
