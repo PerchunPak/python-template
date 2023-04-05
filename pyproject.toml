@@ -16,7 +16,7 @@ repository = "https://github.com/PerchunPak/python-template"
 [tool.poetry.dependencies]
 python = "^3.7,<3.12"
 
-cruft = "~2.12"
+cruft = "~2.14"
 lice = "~0.6"
 
 
