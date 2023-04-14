@@ -55,7 +55,7 @@ Faker = "~18.4"
 
 [tool.poetry.group.docs.dependencies]
 sphinx = "~6.1"
-sphinx-autodoc-typehints = "~1.22"
+sphinx-autodoc-typehints = "~1.23"
 sphinx-autoapi = "~2.1"
 sphinx-intl = "~2.1"  # only for locales
 furo = "*"
