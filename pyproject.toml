@@ -38,7 +38,7 @@ Faker = "~18.5"
 optional = true
 
 [tool.poetry.group.github_hooks.dependencies]
-requests = "~2.28"
+requests = "~2.29"
 GitPython = "~3.1"
 
 
