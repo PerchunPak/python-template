@@ -68,7 +68,7 @@ packaging = "23.1"
 optional = true
 
 [tool.poetry.group.github_hooks.dependencies]
-requests = "~2.29"
+requests = "~2.30"
 GitPython = "~3.1"
 
 
