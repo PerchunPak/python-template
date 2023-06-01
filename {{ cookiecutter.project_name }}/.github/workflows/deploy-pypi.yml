@@ -21,4 +21,4 @@ jobs:
 
       - name: Build and push
         run: |
-          poetry publish --build --username ${{ secrets.PYPI_USERNAME }} --password ${{ secrets.PYPI_PASSWORD }}
+          poetry publish --build --username ${{ '{{' }} secrets.PYPI_USERNAME }} --password ${{ '{{' }} secrets.PYPI_PASSWORD }}

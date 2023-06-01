@@ -7,7 +7,7 @@ on:
   pull_request:
 
 concurrency:
-  group: ${{ github.head_ref || github.run_id }}
+  group: ${{ '{{' }} github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
       id: poetry_setup
       uses: ItsDrike/setup-poetry@v1
       with:
-          python-version: ${{ matrix.python-version }}
+          python-version: ${{ '{{' }} matrix.python-version }}
           install-args: --without docs --with github_hooks --sync
 
     - name: Run checks
@@ -57,9 +57,9 @@ jobs:
     - name: Commit changes
       run: |
         poetry run python .github/commit_and_push.py \
-          --token ${{ secrets.GITHUB_TOKEN }} \
+          --token ${{ '{{' }} secrets.GITHUB_TOKEN }} \
           {{ cookiecutter.organization }}/{{ cookiecutter.project_name }} \
-          ${{ github.head_ref || github.ref_name }} \
+          ${{ '{{' }} github.head_ref || github.ref_name }} \
           "Apply codestyle :pencil2:"
 
     - name: Update poetry.lock
@@ -69,9 +69,9 @@ jobs:
     - name: Commit changes
       run: |
         poetry run python .github/commit_and_push.py \
-          --token ${{ secrets.GITHUB_TOKEN }} \
+          --token ${{ '{{' }} secrets.GITHUB_TOKEN }} \
           {{ cookiecutter.organization }}/{{ cookiecutter.project_name }} \
-          ${{ github.head_ref || github.ref_name }} \
+          ${{ '{{' }} github.head_ref || github.ref_name }} \
           "Update poetry.lock :chart_with_upwards_trend:"
 
     - name: Bump template
@@ -95,7 +95,7 @@ jobs:
     - name: Commit changes
       run: |
         poetry run python .github/commit_and_push.py \
-          --token ${{ secrets.GITHUB_TOKEN }} \
+          --token ${{ '{{' }} secrets.GITHUB_TOKEN }} \
           {{ cookiecutter.organization }}/{{ cookiecutter.project_name }} \
-          ${{ github.head_ref || github.ref_name }} \
+          ${{ '{{' }} github.head_ref || github.ref_name }} \
           "Bump template :rocket:"
