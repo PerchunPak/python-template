@@ -1077,21 +1077,21 @@ virtualenv = ">=20.10.0"
 
 [[package]]
 name = "pycln"
-version = "2.1.6"
+version = "2.2.0"
 description = "A formatter for finding and removing unused import statements."
 optional = false
 python-versions = ">=3.6.2,<4"
 files = [
-    {file = "pycln-2.1.6-py3-none-any.whl", hash = "sha256:2fc4d6fa9e4e1cc71818073122927f6a7a237c8dec47cb579ea79c8756297eab"},
-    {file = "pycln-2.1.6.tar.gz", hash = "sha256:59aed29811614865d88adc3242eb88fee8db711efa9e15f55f4259e88c8f7554"},
+    {file = "pycln-2.2.0-py3-none-any.whl", hash = "sha256:8f2d8be5781de0114cf37d2327c52268093f9ee87712a7fbabc982a17e03cce2"},
+    {file = "pycln-2.2.0.tar.gz", hash = "sha256:e1962987979a7365e113ac0728978c36e0d1f6d4c17b3d26a6d33bc2320efb7f"},
 ]
 
 [package.dependencies]
-libcst = {version = ">=0.3.10,<0.5.0", markers = "python_version >= \"3.7\""}
-pathspec = ">=0.9.0,<0.12.0"
-pyyaml = ">=5.3.1,<7.0.0"
-tomlkit = ">=0.11.1,<0.12.0"
-typer = ">=0.4.1,<0.10.0"
+libcst = {version = ">=0.3.10", markers = "python_version >= \"3.7\""}
+pathspec = ">=0.9.0"
+pyyaml = ">=5.3.1"
+tomlkit = ">=0.11.1"
+typer = ">=0.4.1"
 
 [[package]]
 name = "pycodestyle"
@@ -1958,4 +1958,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<3.12"
-content-hash = "35449c3b8a2abae270b6a8a6608306f601c282cd6ae64ec5f114815821e6165a"
+content-hash = "0b1d33218c00ad5ee63850a5eaa0d05eaeeedcea1e461bd2dee147a92e79dbf5"
