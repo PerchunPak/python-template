@@ -41,7 +41,7 @@ pre-commit = "~3.4"
 
 
 [tool.poetry.group.typing.dependencies]
-mypy = "~1.5"
+mypy = "~1.6"
 
 
 [tool.poetry.group.tests.dependencies]
