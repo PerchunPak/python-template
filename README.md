@@ -13,7 +13,7 @@ Template can be used anywhere, this includes non-my projects.
 ## Installing
 
 ```bash
-pip install cruft lice
+pip install cruft lice setuptools
 cruft create https://github.com/PerchunPak/python-template
 ```
 
