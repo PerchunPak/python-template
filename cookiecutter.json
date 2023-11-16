@@ -6,9 +6,5 @@
   "ukrainian_language_support": "y",
   "russian_language_support": "y",
   "license": "AGPL3",
-  "_copy_without_render": [
-    ".venv",
-    "docs/_build",
-    "docs/_autoapi_templates/python"
-  ]
+  "_copy_without_render": ["docs/_autoapi_templates/python"]
 }
