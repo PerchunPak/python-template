@@ -8,7 +8,6 @@ Pages
 	:caption: Pages
 
 	pages/changelog.rst
-	pages/contributing.rst
 
 .. toctree::
 	:maxdepth: 1
