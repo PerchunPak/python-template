@@ -25,7 +25,7 @@ package:
 {% if cookiecutter.other_languages_support == 'y' -%}
 .PHONY: translate
 translate:
-	pybabel extract -o ./locales/base.pot ./{{cookiecutter.project_name.lower().replace('-', '_')}}
+	pybabel extract -o ./locales/base.pot ./src
 	pybabel update -d ./locales -i ./locales/base.pot
 	pybabel compile -d ./locales
 

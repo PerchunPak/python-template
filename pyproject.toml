@@ -47,4 +47,4 @@ extend-exclude = "{{ cookiecutter.project_name }}"
 
 
 [tool.cruft]
-skip = ["{{cookiecutter.project_name.lower().replace('-', '_')}}"]
+skip = ["src"]

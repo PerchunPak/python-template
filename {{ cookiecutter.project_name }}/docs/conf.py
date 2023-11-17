@@ -152,7 +152,7 @@ napoleon_use_admonition_for_examples = True
 napoleon_use_admonition_for_references = True
 
 # Configuration for autoapi
-autoapi_dirs = ["../{{cookiecutter.project_name.lower().replace('-', '_')}}"]
+autoapi_dirs = ["../src"]
 autoapi_template_dir = "_autoapi_templates"
 autoapi_root = "api"
 
