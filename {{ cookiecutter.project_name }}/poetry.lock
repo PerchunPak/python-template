@@ -1016,17 +1016,17 @@ virtualenv = ">=20.10.0"
 
 [[package]]
 name = "pycln"
-version = "2.3.0"
+version = "2.4.0"
 description = "A formatter for finding and removing unused import statements."
 optional = false
-python-versions = ">=3.6.2,<4"
+python-versions = ">=3.7.0,<4"
 files = [
-    {file = "pycln-2.3.0-py3-none-any.whl", hash = "sha256:d6731e17a60728b827211de2ca4bfc9b40ea1df99a12f3e0fd06a98a0c9e6caa"},
-    {file = "pycln-2.3.0.tar.gz", hash = "sha256:8759b36753234c8f95895a31dde329479ffed2218f49d1a1c77c7edccc02e09b"},
+    {file = "pycln-2.4.0-py3-none-any.whl", hash = "sha256:d1bf648df17077306100815d255d45430035b36f66bac635df04a323c61ba126"},
+    {file = "pycln-2.4.0.tar.gz", hash = "sha256:1f3eefb7be18a9ee06c3bdd0ba2e91218cd39317e20130325f107e96eb84b9f6"},
 ]
 
 [package.dependencies]
-libcst = {version = ">=0.3.10", markers = "python_version >= \"3.7\""}
+libcst = ">=0.3.10"
 pathspec = ">=0.9.0"
 pyyaml = ">=5.3.1"
 tomlkit = ">=0.11.1"
@@ -1117,21 +1117,6 @@ files = [
 [package.dependencies]
 importlib-metadata = {version = ">=3.6.0", markers = "python_version < \"3.10\""}
 pytest = "*"
-
-[[package]]
-name = "pytest-testmon"
-version = "2.1.0"
-description = "selects tests affected by changed files and methods"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "pytest-testmon-2.1.0.tar.gz", hash = "sha256:b3d20a3ceb099e36727217096a7b3fc662877bd8b0768d2439983924c2a807a6"},
-    {file = "pytest_testmon-2.1.0-py3-none-any.whl", hash = "sha256:a9848735b53381bf97a421c5c40828f0e1973d8a30748d345edc2108315cbe8d"},
-]
-
-[package.dependencies]
-coverage = ">=6,<8"
-pytest = ">=5,<8"
 
 [[package]]
 name = "python-dateutil"
@@ -1742,4 +1727,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<3.13"
-content-hash = "e47dd47c8f58fb3bcc1aba8e2283a2be0b82ad418711aeca91c469e262efba55"
+content-hash = "b1b0578e1e3dd8740c609c2169172b65c1da0d1fd48e04d405a41754cb8923f4"
