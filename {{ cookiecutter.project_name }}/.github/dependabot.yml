@@ -16,7 +16,6 @@ updates:
     - dependency-name: "black"
     - dependency-name: "isort"
     - dependency-name: "pycln"
-    - dependency-name: "doc8"
     - dependency-name: "mypy"
     - dependency-name: "pydocstyle"
     - dependency-name: "safety"

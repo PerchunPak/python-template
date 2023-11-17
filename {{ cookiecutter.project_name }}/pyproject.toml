@@ -26,8 +26,6 @@ sentry-sdk = "~1.35"
 black = "~23"
 isort = "~5.12"
 pycln = "~2.3"
-doc8 = "~1.1"
-pydocstyle = ">=4.0.0"
 safety = "~2.3"
 cruft = "~2.15"
 lice = "~0.6"  # for generating template
