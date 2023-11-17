@@ -18,10 +18,6 @@ updates:
     - dependency-name: "*"
       update-types: [ "version-update:semver-patch" ]
 
-    - dependency-name: "flake8"
-      update-types: [ "version-update:semver-minor" ]
-    - dependency-name: "flake8-docstrings"
-      update-types: [ "version-update:semver-minor" ]
     - dependency-name: "python-decouple"
       update-types: [ "version-update:semver-minor" ]
 

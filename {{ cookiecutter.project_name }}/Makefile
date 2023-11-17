@@ -9,7 +9,6 @@ format:
 .PHONY: lint
 lint:
 	mypy .
-	flake8 .
 	doc8 -q docs
 
 .PHONY: style
