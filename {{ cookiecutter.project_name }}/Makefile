@@ -15,11 +15,7 @@ style: format lint
 
 .PHONY: unit
 unit:
-ifeq ($(ci),1)
-	pytest --no-testmon
-else
-	pytest --no-cov
-endif
+	pytest
 
 .PHONY: package
 package:
