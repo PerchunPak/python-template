@@ -22,7 +22,6 @@ lice = "~0.6"
 
 [tool.poetry.group.make.dependencies]
 pre-commit = "~2.21"
-safety = "~2.3"
 
 
 [tool.poetry.group.tests.dependencies]

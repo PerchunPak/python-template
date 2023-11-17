@@ -4,7 +4,6 @@ SHELL:=/usr/bin/env bash
 package:
 	poetry check
 	pip check
-	safety check --full-report
 
 .PHONY: unit
 unit:

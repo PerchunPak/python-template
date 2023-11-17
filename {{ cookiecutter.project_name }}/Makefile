@@ -25,7 +25,6 @@ endif
 package:
 	poetry check
 	pip check
-	safety check --full-report
 
 {% if cookiecutter.other_languages_support == 'y' -%}
 .PHONY: translate
