@@ -40,10 +40,6 @@ msgid "Build Status"
 msgstr "Статус Сборки"
 
 #: ../../../README.md:-1
-msgid "codecov"
-msgstr "codecov"
-
-#: ../../../README.md:-1
 msgid "Documentation Build Status"
 msgstr "Статус Сборки Документации"
 
