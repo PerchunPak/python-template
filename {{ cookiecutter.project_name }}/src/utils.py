@@ -60,7 +60,7 @@ def setup_logging() -> None:
 def start_sentry() -> None:
     """Start Sentry listening."""
     # circular imports
-    from short_it.config import BASE_DIR, Config
+    from src.config import BASE_DIR, Config
 
     config = Config()
 
