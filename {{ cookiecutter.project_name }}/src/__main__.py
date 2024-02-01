@@ -11,6 +11,7 @@ async def main() -> None:
     logger.info("Hello World!")
 
     Config()
+    utils.start_sentry()
     # start app here
 
 
