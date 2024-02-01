@@ -4,6 +4,7 @@ import pathlib
 import sys
 import typing as t
 
+import apykuma
 import sentry_sdk
 from loguru import logger
 
@@ -86,3 +87,20 @@ def _get_commit(commit_txt_path: pathlib.Path) -> t.Optional[str]:
     with commit_txt_path.open() as commit_txt_file:
         commit = commit_txt_file.read().strip()
         return commit
+
+
+async def start_apykuma() -> None:
+    # circular imports
+    from src.config import Config
+
+    config = Config()
+
+    if not config.apykuma.enabled:
+        return
+
+    await apykuma.start(
+        url=config.apykuma.url,
+        interval=config.apykuma.interval,
+        delay=config.apykuma.delay,
+        handle_exception=logger.exception,
+    )
