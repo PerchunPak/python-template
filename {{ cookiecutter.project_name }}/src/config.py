@@ -42,9 +42,6 @@ class LoggingSection:
 class Config(metaclass=utils.Singleton):
     """The main config that holds everything in itself."""
 
-    token: str = "..."
-    start_command_photo_id: str = "..."
-    admins: list[int] = dataclasses.field(default_factory=list)
     sentry: SentryConfigSection = dataclasses.field(default_factory=SentryConfigSection)
     logging: LoggingSection = dataclasses.field(default_factory=LoggingSection)
 
