@@ -11,6 +11,8 @@ async def main() -> None:
     logger.info("Hello World!")
 
     Config()
+    utils.start_sentry()
+    await utils.start_apykuma()
     # start app here
 
 

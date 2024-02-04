@@ -13,6 +13,16 @@ BASE_DIR = pathlib.Path(__file__).parent.parent
 
 
 @dataclasses.dataclass
+class ApykumaConfigSection:
+    """Sentry config section."""
+
+    enabled: bool = False
+    url: str = "..."
+    interval: int = 60
+    delay: int = 0
+
+
+@dataclasses.dataclass
 class SentryConfigSection:
     """Sentry config section."""
 
@@ -42,9 +52,7 @@ class LoggingSection:
 class Config(metaclass=utils.Singleton):
     """The main config that holds everything in itself."""
 
-    token: str = "..."
-    start_command_photo_id: str = "..."
-    admins: list[int] = dataclasses.field(default_factory=list)
+    apykuma: ApykumaConfigSection = dataclasses.field(default_factory=ApykumaConfigSection)
     sentry: SentryConfigSection = dataclasses.field(default_factory=SentryConfigSection)
     logging: LoggingSection = dataclasses.field(default_factory=LoggingSection)
 
