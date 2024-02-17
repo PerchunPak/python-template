@@ -8,6 +8,9 @@ import apykuma
 import sentry_sdk
 from loguru import logger
 
+BASE_DIR = pathlib.Path(__file__).parent.parent
+DATA_DIR = pathlib.Path(os.environ.get("DATA_DIR", BASE_DIR / "data"))
+
 
 class Singleton(type):
     """Metaclass to do Singleton pattern."""
@@ -61,7 +64,7 @@ def setup_logging() -> None:
 def start_sentry() -> None:
     """Start Sentry listening."""
     # circular imports
-    from src.config import BASE_DIR, Config
+    from src.config import Config
 
     config = Config()
 

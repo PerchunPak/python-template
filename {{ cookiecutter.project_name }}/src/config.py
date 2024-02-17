@@ -9,8 +9,6 @@ import typing_extensions as te
 
 from src import utils
 
-BASE_DIR = pathlib.Path(__file__).parent.parent
-
 
 @dataclasses.dataclass
 class ApykumaConfigSection:
@@ -62,7 +60,7 @@ class Config(metaclass=utils.Singleton):
 
         Loads config from a file, and then rewrites it with data merged from defaults.
         """
-        config_path = BASE_DIR / "data" / "config.yml"
+        config_path = utils.DATA_DIR / "config.yml"
         config_path.parent.mkdir(exist_ok=True)
         cfg = omegaconf.OmegaConf.structured(cls)
 
