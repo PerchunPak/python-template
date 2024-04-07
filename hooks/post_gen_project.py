@@ -57,7 +57,7 @@ def handle_translations() -> None:
         rmtree(f"{PROJECT_DIRECTORY}/docs/locale/ru")
 
 
-def print_futher_instuctions() -> None:
+def print_further_instructions() -> None:
     """Shows user what to do next after project creation."""
     message = """
     Your project {0} is created.
@@ -69,4 +69,4 @@ def print_futher_instuctions() -> None:
 
 generate_license()
 handle_translations()
-print_futher_instuctions()
+print_further_instructions()
