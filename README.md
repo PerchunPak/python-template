@@ -2,7 +2,7 @@
 
 [![Support Ukraine](https://badgen.net/badge/support/UKRAINE/?color=0057B8&labelColor=FFD700)](https://savelife.in.ua/en/)
 
-[![Build Status](https://github.com/PerchunPak/python-template/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/PerchunPak/python-template/actions?query=workflow%3Atest)
+[![Build Status](https://github.com/PerchunPak/python-template/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/PerchunPak/python-template/actions?query=workflow%3Atest)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Python 3.12 badge](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/downloads/)
 
@@ -25,7 +25,7 @@ cd python-template
 
 ### Installing `poetry`
 
-Next we need install `poetry` with [recomended way](https://python-poetry.org/docs/master/#installation).
+Next we need install `poetry` with [recommended way](https://python-poetry.org/docs/master/#installation).
 
 If you use Linux, use command:
 
